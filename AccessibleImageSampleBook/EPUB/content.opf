@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="uuid_id" prefix="ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0/">
+  <metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:title>Accessible Images Sample Book</dc:title>
+    <dc:creator id="creator01">DIAGRAM Center</dc:creator>
+        <meta property="role" refines="#creator01">aut</meta>
+        <meta property="file-as" refines="#creator01">DIAGRAM Center</meta>
+    <dc:language>en-us</dc:language>
+    <dc:identifier id="uuid_id">de3ae9bd-1fa2-418e-9561-573e168e9e78</dc:identifier>
+        <meta property="identifier-type" refines="#uuid_id">uuid</meta>
+        <meta property="dcterms:modified">2015-02-17T09:30:00Z</meta>
+    <dc:publisher id="en_publisher" xml:lang="en-us">DIAGRAM Center</dc:publisher>
+    <dc:rights id="en_rights" xml:lang="en-us">All rights reserved.</dc:rights>
+    <dc:date>2013-08-23</dc:date>
+    <meta property="ibooks:specified-fonts">true</meta>
+    <meta property="ibooks:version">2.0</meta>
+    <meta name="cover" content="cover-image" />
+  </metadata>
+
+  <manifest>
+    <item id="cover-image" href="cover.jpg" media-type="image/jpeg" properties="cover-image"/>
+    <item id="cover" href="cover.xhtml" media-type="application/xhtml+xml"/>
+    <item id="titlepage" href="titlepage.xhtml" media-type="application/xhtml+xml"/>
+    <item id="nav" href="nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+    <item id="preface" href="preface.xhtml" media-type="application/xhtml+xml"/>
+    <item id="intro" href="intro.xhtml" media-type="application/xhtml+xml"/>
+    <item id="exemplar1" href="examplar1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="exemplar2" href="examplar2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="exemplar3" href="examplar3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="exemplar4" href="examplar4.xhtml" media-type="application/xhtml+xml"/>
+    <item id="exemplar5" href="examplar5.xhtml" media-type="application/xhtml+xml"/>
+    <item id="exemplar6" href="examplar6.xhtml" media-type="application/xhtml+xml"/>
+    <item id="exemplar7" href="examplar7.xhtml" media-type="application/xhtml+xml"/>
+    <item id="conclusion" href="conclusion.xhtml" media-type="application/xhtml+xml"/>
+    <item id="resources" href="resources.xhtml" media-type="application/xhtml+xml"/>
+    <item id="acknowledgments" href="acknowledgments.xhtml" media-type="application/xhtml+xml"/>
+    <item id="sourcefiles" href="sourcefiles.xhtml" media-type="application/xhtml+xml"/>
+    <item id="copyright" href="copyright.xhtml" media-type="application/xhtml+xml"/>
+    <item id="html14" href="pix/ex1-epub-lg.xhtml" media-type="application/xhtml+xml"/>
+    <item id="html15" href="pix/ex1-lg.xhtml" media-type="application/xhtml+xml"/>
+    <item id="html16" href="pix/ex6-3d-lg.xhtml" media-type="application/xhtml+xml"/>
+    <item id="html17" href="pix/ex6-context-lg.xhtml" media-type="application/xhtml+xml"/>
+    <item id="html18" href="pix/ex8-context-lg.xhtml" media-type="application/xhtml+xml"/>
+    <item id="html19" href="pix/heart-lung-tg-lg.xhtml" media-type="application/xhtml+xml"/>
+    <item id="html20" href="pix/heart-lung-tg-p2-lg.xhtml" media-type="application/xhtml+xml"/>
+    <item id="html21" href="pix/map-context-lg.xhtml" media-type="application/xhtml+xml"/>
+    <item id="html22" href="pix/map-daisy-lg.xhtml" media-type="application/xhtml+xml"/>
+    <item id="html23" href="pix/map-daisy-long-lg.xhtml" media-type="application/xhtml+xml"/>
+    <item id="html24" href="pix/map-epub-lg.xhtml" media-type="application/xhtml+xml"/>
+    <item id="html25" href="pix/map-epub-long-lg.xhtml" media-type="application/xhtml+xml"/>
+    <item id="html26" href="pix/map-lg.xhtml" media-type="application/xhtml+xml"/>
+    <item id="html27" href="pix/math-lg.xhtml" media-type="application/xhtml+xml"/>
+    <item id="html28" href="pix/soc-context-lg.xhtml" media-type="application/xhtml+xml"/>
+    <item id="html29" href="pix/soc-daisy-lg.xhtml" media-type="application/xhtml+xml"/>
+    <item id="html30" href="pix/soc-daisy-long-lg.xhtml" media-type="application/xhtml+xml"/>
+    <item id="html31" href="pix/soc-epub-lg.xhtml" media-type="application/xhtml+xml"/>
+    <item id="html32" href="pix/soc-epub-long-lg.xhtml" media-type="application/xhtml+xml"/>
+    <item id="html33" href="pix/soc-lg.xhtml" media-type="application/xhtml+xml"/>
+    <item id="html34" href="pix/survey-context-lg.xhtml" media-type="application/xhtml+xml"/>
+    <item id="html35" href="pix/survey-lg.xhtml" media-type="application/xhtml+xml"/>
+    <item id="html36" href="pix/ex1-context-lg.xhtml" media-type="application/xhtml+xml"/>
+    <item id="html37" href="pix/ex1-daisy-lg.xhtml" media-type="application/xhtml+xml"/>
+    <item id="html54" href="pix/barchart-1-lg.xhtml" media-type="application/xhtml+xml"/>
+    <item id="html55" href="pix/barchart-2-lg.xhtml" media-type="application/xhtml+xml"/>
+    <item id="html83" href="pix/survey-epub-lg.xhtml" media-type="application/xhtml+xml"/>
+    <item id="html84" href="pix/survey-daisy-lg.xhtml" media-type="application/xhtml+xml"/>
+    <item id="html90" href="pix/anglesmap-lg.xhtml" media-type="application/xhtml+xml"/>
+    <item id="image2" href="images/ex1-context.jpg" media-type="image/jpeg"/>
+    <item id="image4" href="images/ex1-epub.jpg" media-type="image/jpeg"/>
+    <item id="image6" href="images/ex1-daisy.jpg" media-type="image/jpeg"/>
+    <item id="image8" href="images/heart-lung-tg.jpg" media-type="image/jpeg"/>
+    <item id="image10" href="images/heart-lung-tg-p2.jpg" media-type="image/jpeg"/>
+    <item id="image12" href="images/map.jpg" media-type="image/jpeg"/>
+    <item id="image14" href="images/map-context.jpg" media-type="image/jpeg"/>
+    <item id="image16" href="images/map-epub.jpg" media-type="image/jpeg"/>
+    <item id="image18" href="images/map-daisy.jpg" media-type="image/jpeg"/>
+    <item id="image20" href="images/map-epub-long.jpg" media-type="image/jpeg"/>
+    <item id="image22" href="images/map-daisy-long.jpg" media-type="image/jpeg"/>
+    <item id="image24" href="images/soc.jpg" media-type="image/jpeg"/>
+    <item id="image26" href="images/soc-context.jpg" media-type="image/jpeg"/>
+    <item id="image28" href="images/soc-epub.jpg" media-type="image/jpeg"/>
+    <item id="image30" href="images/soc-daisy.jpg" media-type="image/jpeg"/>
+    <item id="image32" href="images/soc-epub-long.jpg" media-type="image/jpeg"/>
+    <item id="image34" href="images/soc-daisy-long.jpg" media-type="image/jpeg"/>
+    <item id="image36" href="images/math.jpg" media-type="image/jpeg"/>
+    <item id="image38" href="images/eq.jpg" media-type="image/jpeg"/>
+    <item id="image39" href="images/son1.jpg" media-type="image/jpeg"/>
+    <item id="image41" href="images/son2.jpg" media-type="image/jpeg"/>
+    <item id="image44" href="images/ex6-context.jpg" media-type="image/jpeg"/>
+    <item id="image46" href="images/ex6.jpg" media-type="image/jpeg"/>
+    <item id="image47" href="images/ex8-context.jpg" media-type="image/jpeg"/>
+    <item id="image49" href="images/ex8.jpg" media-type="image/jpeg"/>
+    <item id="image51" href="images/survey-context.jpg" media-type="image/jpeg"/>
+    <item id="image53" href="images/survey.jpg" media-type="image/jpeg"/>
+    <item id="image54" href="images/logo-osep.gif" media-type="image/gif"/>
+    <item id="image59" href="images/ex6-3d.jpg" media-type="image/jpeg"/>
+    <item id="image87" href="images/anglesmap.jpg" media-type="image/jpeg"/>
+    <item id="image89" href="images/logo.jpg" media-type="image/jpeg"/>
+    <item id="image90" href="images/barchart.jpg" media-type="image/jpeg"/>
+    <item id="image91" href="images/barchart_2.jpg" media-type="image/jpeg"/>
+    <item id="image95" href="images/survey-epub.jpg" media-type="image/jpeg"/>
+    <item id="image96" href="images/survey-daisy.jpg" media-type="image/jpeg"/>
+    <item id="image97" href="images/ex1.jpg" media-type="image/jpeg"/>
+    <item id="audio1" href="src/Figure_11-5.mp3" media-type="audio/mpeg"/>
+    <item id="audio2" href="src/Figure_11-6.mp3" media-type="audio/mpeg"/>
+    <item id="css" href="stylesheet.css" media-type="text/css"/>
+    <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+  </manifest>
+
+  <spine toc="ncx">
+    <itemref idref="cover"/>
+    <itemref idref="titlepage"/>
+    <itemref idref="nav"/>
+    <itemref idref="preface"/>
+    <itemref idref="intro"/>
+    <itemref idref="exemplar1"/>
+    <itemref idref="html36" linear="no"/>
+    <itemref idref="html37" linear="no"/>
+    <itemref idref="html14" linear="no"/>
+    <itemref idref="html15" linear="no"/>
+    <itemref idref="html19" linear="no"/>
+    <itemref idref="html20" linear="no"/>
+    <itemref idref="exemplar2"/>
+    <itemref idref="html21" linear="no"/>
+    <itemref idref="html22" linear="no"/>
+    <itemref idref="html23" linear="no"/>
+    <itemref idref="html24" linear="no"/>
+    <itemref idref="html25" linear="no"/>
+    <itemref idref="html26" linear="no"/>
+    <itemref idref="html27" linear="no"/>
+    <itemref idref="exemplar3"/>
+    <itemref idref="html28" linear="no"/>
+    <itemref idref="html31" linear="no"/>
+    <itemref idref="html29" linear="no"/>
+    <itemref idref="html32" linear="no"/>
+    <itemref idref="html30" linear="no"/>
+    <itemref idref="html33" linear="no"/>
+    <itemref idref="html54" linear="no"/>
+    <itemref idref="html55" linear="no"/>
+    <itemref idref="exemplar4"/>
+    <itemref idref="exemplar5"/>
+    <itemref idref="html90" linear="no"/>
+    <itemref idref="html35" linear="no"/>
+    <itemref idref="html34" linear="no"/>
+    <itemref idref="html54" linear="no"/>
+    <itemref idref="html83" linear="no"/>
+    <itemref idref="html84" linear="no"/>
+    <itemref idref="exemplar6"/>
+    <itemref idref="html16" linear="no"/>
+    <itemref idref="html17" linear="no"/>
+    <itemref idref="exemplar7"/>
+    <itemref idref="html18" linear="no"/>
+    <itemref idref="conclusion"/>
+    <itemref idref="resources"/>
+    <itemref idref="acknowledgments"/>
+    <itemref idref="sourcefiles"/>
+    <itemref idref="copyright"/>
+  </spine>
+
+</package>

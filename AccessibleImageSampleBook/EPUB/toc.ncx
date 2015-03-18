@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="UND">
+  <head>
+    <meta content="de3ae9bd-1fa2-418e-9561-573e168e9e78" name="dtb:uid"/>
+    <meta content="2" name="dtb:depth"/>
+    <meta content="0" name="dtb:totalPageCount"/>
+    <meta content="0" name="dtb:maxPageNumber"/>
+  </head>
+  <docTitle><text>Accessible Image Sample Book</text></docTitle>
+
+<navMap>
+  <navPoint id="nav1" playOrder="1">
+    <navLabel><text>Preface</text></navLabel>
+    <content src="preface.xhtml"/>
+  </navPoint>
+  <navPoint id="nav2" playOrder="2">
+    <navLabel><text>Introduction</text></navLabel>
+    <content src="intro.xhtml"/>
+  </navPoint>
+  <navPoint id="nav3" playOrder="3">
+    <navLabel><text>Sample 1: Heart and Lung Diagram (K12 health science)</text></navLabel>
+    <content src="examplar1.xhtml"/>
+    <navPoint id="nav4" playOrder="4">
+      <navLabel><text>Making This Image Accessible</text></navLabel>
+      <content src="examplar1.xhtml#makeaccessible"/>
+    </navPoint>
+    <navPoint id="nav5" playOrder="5">
+      <navLabel><text>Text or Audio Description</text></navLabel>
+      <content src="examplar1.xhtml#textoraudio"/>
+      <navPoint id="nav6" playOrder="6">
+        <navLabel><text>EPUB 3</text></navLabel>
+        <content src="examplar1.xhtml#epub3"/>
+      </navPoint>
+      <navPoint id="nav7" playOrder="7">
+        <navLabel><text>DAISY</text></navLabel>
+        <content src="examplar1.xhtml#daisy"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="nav8" playOrder="8">
+      <navLabel><text>Tactile graphic</text></navLabel>
+      <content src="examplar1.xhtml#tactile"/>
+    </navPoint>
+  </navPoint>
+  <navPoint id="nav9" playOrder="9">
+    <navLabel><text>Sample 2: Map of North America (postsecondary history)</text></navLabel>
+    <content src="examplar2.xhtml"/>
+    <navPoint id="nav10" playOrder="10">
+      <navLabel><text>Making This Image Accessible</text></navLabel>
+      <content src="examplar2.xhtml#makeaccessible"/>
+    </navPoint>
+    <navPoint id="nav11" playOrder="11">
+      <navLabel><text>Short Text or Audio Description</text></navLabel>
+      <content src="examplar2.xhtml#shorttextoraudio"/>
+      <navPoint id="nav12" playOrder="12">
+        <navLabel><text>EPUB 3</text></navLabel>
+        <content src="examplar2.xhtml#shortepub3"/>
+      </navPoint>
+      <navPoint id="nav13" playOrder="13">
+        <navLabel><text>DAISY</text></navLabel>
+        <content src="examplar2.xhtml#shortdaisy"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="nav14" playOrder="14">
+      <navLabel><text>Long Text or Audio Description</text></navLabel>
+      <content src="examplar2.xhtml#longtextoraudio"/>
+      <navPoint id="nav15" playOrder="15">
+        <navLabel><text>EPUB 3</text></navLabel>
+        <content src="examplar2.xhtml#longepub3"/>
+      </navPoint>
+      <navPoint id="nav16" playOrder="16">
+        <navLabel><text>DAISY</text></navLabel>
+        <content src="examplar2.xhtml#longdaisy"/>
+      </navPoint>
+    </navPoint>
+  </navPoint>
+  <navPoint id="nav17" playOrder="17">
+    <navLabel><text>Sample 3: Institutional Discrimination Bar Chart (postsecondary sociology)</text></navLabel>
+    <content src="examplar3.xhtml"/>
+    <navPoint id="nav18" playOrder="18">
+      <navLabel><text>Making This Image Accessible</text></navLabel>
+      <content src="examplar3.xhtml#makeaccessible"/>
+    </navPoint>
+    <navPoint id="nav19" playOrder="19">
+      <navLabel><text>Short Text or Audio Description</text></navLabel>
+      <content src="examplar3.xhtml#shorttextoraudio"/>
+      <navPoint id="nav20" playOrder="20">
+        <navLabel><text>EPUB 3</text></navLabel>
+        <content src="examplar3.xhtml#shortepub3"/>
+      </navPoint>
+      <navPoint id="nav21" playOrder="21">
+        <navLabel><text>DAISY</text></navLabel>
+        <content src="examplar3.xhtml#shortdaisy"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="nav22" playOrder="22">
+      <navLabel><text>Long Text or Audio Description</text></navLabel>
+      <content src="examplar3.xhtml#longtextoraudio"/>
+      <navPoint id="nav23" playOrder="23">
+        <navLabel><text>EPUB 3</text></navLabel>
+        <content src="examplar3.xhtml#longepub3"/>
+      </navPoint>
+      <navPoint id="nav24" playOrder="24">
+        <navLabel><text>DAISY</text></navLabel>
+        <content src="examplar3.xhtml#longdaisy"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="nav25" playOrder="25">
+      <navLabel><text>Tactile graphic</text></navLabel>
+      <content src="examplar3.xhtml#tactile"/>
+    </navPoint>
+  </navPoint>
+  <navPoint id="nav26" playOrder="26">
+    <navLabel><text>Sample 4: Quadratic Functions and Their Graphs (secondary math)</text></navLabel>
+    <content src="examplar4.xhtml"/>
+    <navPoint id="nav27" playOrder="27">
+      <navLabel><text>Making This Image Accessible</text></navLabel>
+      <content src="examplar4.xhtml#makeaccessible"/>
+    </navPoint>
+    <navPoint id="nav28" playOrder="28">
+      <navLabel><text>MathML</text></navLabel>
+      <content src="examplar4.xhtml#mathml"/>
+    </navPoint>
+    <navPoint id="nav29" playOrder="29">
+      <navLabel><text>Text or Audio Description</text></navLabel>
+      <content src="examplar4.xhtml#textoraudio"/>
+      <navPoint id="nav30" playOrder="30">
+        <navLabel><text>EPUB 3</text></navLabel>
+        <content src="examplar4.xhtml#epub3"/>
+      </navPoint>
+      <navPoint id="nav31" playOrder="31">
+        <navLabel><text>DAISY</text></navLabel>
+        <content src="examplar4.xhtml#daisy"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="nav32" playOrder="32">
+      <navLabel><text>Sonification</text></navLabel>
+      <content src="examplar4.xhtml#sonification"/>
+    </navPoint>
+  </navPoint>
+  <navPoint id="nav33" playOrder="33">
+    <navLabel><text>Sample 5: Angles on a Survey Map (secondary assessment)</text></navLabel>
+    <content src="examplar5.xhtml"/>
+    <navPoint id="nav34" playOrder="34">
+      <navLabel><text>Making This Image Accessible</text></navLabel>
+      <content src="examplar5.xhtml#makeaccessible"/>
+    </navPoint>
+    <navPoint id="nav35" playOrder="35">
+      <navLabel><text>Text or Audio Description</text></navLabel>
+      <content src="examplar5.xhtml#textoraudio"/>
+      <navPoint id="nav36" playOrder="36">
+        <navLabel><text>EPUB 3</text></navLabel>
+        <content src="examplar5.xhtml#epub3"/>
+      </navPoint>
+      <navPoint id="nav37" playOrder="37">
+        <navLabel><text>DAISY</text></navLabel>
+        <content src="examplar5.xhtml#daisy"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="nav38" playOrder="38">
+      <navLabel><text>Tactile graphic</text></navLabel>
+      <content src="examplar5.xhtml#tactile"/>
+    </navPoint>
+    <navPoint id="nav39" playOrder="39">
+      <navLabel><text>DIAGRAM Content Model</text></navLabel>
+      <content src="examplar5.xhtml#diagramcontentmodel"/>
+    </navPoint>
+  </navPoint>
+  <navPoint id="nav40" playOrder="40">
+    <navLabel><text>Sample 6: Carbon Atom (postsecondary chemistry)</text></navLabel>
+    <content src="examplar6.xhtml"/>
+    <navPoint id="nav41" playOrder="41">
+      <navLabel><text>Making This Image Accessible</text></navLabel>
+      <content src="examplar6.xhtml#makeaccessible"/>
+    </navPoint>
+  </navPoint>
+  <navPoint id="nav42" playOrder="42">
+    <navLabel><text>Sample 7: Decorative and Redundant Images (secondary literature)</text></navLabel>
+    <content src="examplar7.xhtml"/>
+    <navPoint id="nav43" playOrder="43">
+      <navLabel><text>Making This Image Accessible</text></navLabel>
+      <content src="examplar7.xhtml#makeaccessible"/>
+    </navPoint>
+    <navPoint id="nav44" playOrder="44">
+      <navLabel><text>Text or Audio Description</text></navLabel>
+      <content src="examplar7.xhtml#textoraudio"/>
+      <navPoint id="nav45" playOrder="45">
+        <navLabel><text>EPUB 3</text></navLabel>
+        <content src="examplar7.xhtml#epub3"/>
+      </navPoint>
+      <navPoint id="nav46" playOrder="46">
+        <navLabel><text>DAISY</text></navLabel>
+        <content src="examplar7.xhtml#daisy"/>
+      </navPoint>
+    </navPoint>
+  </navPoint>
+  <navPoint id="nav47" playOrder="47">
+    <navLabel><text>Looking Ahead</text></navLabel>
+    <content src="conclusion.xhtml"/>
+  </navPoint>
+  <navPoint id="nav48" playOrder="48">
+    <navLabel><text>Guidelines, Tutorials, and Other Resources</text></navLabel>
+    <content src="resources.xhtml"/>
+  </navPoint>
+  <navPoint id="nav49" playOrder="49">
+    <navLabel><text>Acknowledgments</text></navLabel>
+    <content src="acknowledgments.xhtml"/>
+  </navPoint>
+  <navPoint id="nav50" playOrder="50">
+    <navLabel><text>Source Files and Image Citations</text></navLabel>
+    <content src="sourcefiles.xhtml"/>
+  </navPoint>
+  <navPoint id="nav51" playOrder="51">
+    <navLabel><text>Notice</text></navLabel>
+    <content src="copyright.xhtml"/>
+  </navPoint>
+</navMap>
+
+</ncx>
