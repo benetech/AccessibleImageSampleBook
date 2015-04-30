@@ -5,7 +5,7 @@
 body {
     font-family: "Roman", serif;
 }
-p {
+p, li {
     margin-top: 0;
     margin-bottom: 0;
     line-height: 1.5em;
@@ -155,8 +155,6 @@ table.border th, table.border td {
 /* ################### Images ################## */
 /* ############################################# */
 body.fullpage {
-  oeb-column-number: 1;
-  column-count: 1;
   margin: 0;
   padding: 0;
 }
@@ -189,7 +187,7 @@ div.img_l {
 div.img_l img {
   max-width: 100%;
 }
-p.viewlarge {
+p.viewlarge, p.caption {
   text-align: center;
   text-indent: 0;
   margin: 0;
@@ -292,5 +290,16 @@ a[href] {
     color: blue;
     text-decoration: underline;
     cursor: pointer
+}
+
+dt {
+  text-align: left;
+  font-weight: bold;
+  margin-top: 0.5em;
+}
+dd {
+  text-align: left;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
 }
 

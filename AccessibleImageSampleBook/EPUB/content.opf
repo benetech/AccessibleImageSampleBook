@@ -8,7 +8,7 @@
     <dc:language>en-us</dc:language>
     <dc:identifier id="uuid_id">de3ae9bd-1fa2-418e-9561-573e168e9e78</dc:identifier>
         <meta property="identifier-type" refines="#uuid_id">uuid</meta>
-        <meta property="dcterms:modified">2015-02-17T09:30:00Z</meta>
+        <meta property="dcterms:modified">2015-04-30T11:30:00Z</meta>
     <dc:publisher id="en_publisher" xml:lang="en-us">DIAGRAM Center</dc:publisher>
     <dc:rights id="en_rights" xml:lang="en-us">All rights reserved.</dc:rights>
     <dc:date>2013-08-23</dc:date>
@@ -22,20 +22,28 @@
     <item id="cover" href="cover.xhtml" media-type="application/xhtml+xml"/>
     <item id="titlepage" href="titlepage.xhtml" media-type="application/xhtml+xml"/>
     <item id="nav" href="nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>
-    <item id="preface" href="preface.xhtml" media-type="application/xhtml+xml"/>
-    <item id="intro" href="intro.xhtml" media-type="application/xhtml+xml"/>
-    <item id="exemplar1" href="examplar1.xhtml" media-type="application/xhtml+xml"/>
-    <item id="exemplar2" href="examplar2.xhtml" media-type="application/xhtml+xml"/>
-    <item id="exemplar3" href="examplar3.xhtml" media-type="application/xhtml+xml"/>
-    <item id="exemplar4" href="examplar4.xhtml" media-type="application/xhtml+xml"/>
-    <item id="exemplar5" href="examplar5.xhtml" media-type="application/xhtml+xml"/>
-    <item id="exemplar6" href="examplar6.xhtml" media-type="application/xhtml+xml"/>
-    <item id="exemplar7" href="examplar7.xhtml" media-type="application/xhtml+xml"/>
-    <item id="conclusion" href="conclusion.xhtml" media-type="application/xhtml+xml"/>
-    <item id="resources" href="resources.xhtml" media-type="application/xhtml+xml"/>
-    <item id="acknowledgments" href="acknowledgments.xhtml" media-type="application/xhtml+xml"/>
-    <item id="sourcefiles" href="sourcefiles.xhtml" media-type="application/xhtml+xml"/>
-    <item id="copyright" href="copyright.xhtml" media-type="application/xhtml+xml"/>
+    <item id="text1" href="Preface.xhtml" media-type="application/xhtml+xml"/>
+    <item id="text2" href="Intro.xhtml" media-type="application/xhtml+xml"/>
+    <item id="text3" href="GettingStarted.xhtml" media-type="application/xhtml+xml"/>
+    <item id="text4" href="01-HeartLung.xhtml" media-type="application/xhtml+xml"/>
+    <item id="text5" href="02-Map.xhtml" media-type="application/xhtml+xml"/>
+    <item id="text6" href="03a-Institutional.xhtml" media-type="application/xhtml+xml"/>
+    <item id="text7" href="03b-Quadratic.xhtml" media-type="application/xhtml+xml"/>
+    <item id="text8" href="04-RelationalDiagrams.xhtml" media-type="application/xhtml+xml"/>
+    <item id="text9" href="05-AnglesSurvey.xhtml" media-type="application/xhtml+xml"/>
+    <item id="text10" href="06a-Chemistry.xhtml" media-type="application/xhtml+xml"/>
+    <item id="text11" href="06b-CarbonAtom.xhtml" media-type="application/xhtml+xml"/>
+    <item id="text12" href="07-Cartoons.xhtml" media-type="application/xhtml+xml"/>
+    <item id="text13" href="08-Music.xhtml" media-type="application/xhtml+xml"/>
+    <item id="text14" href="09-Haptics.xhtml" media-type="application/xhtml+xml"/>
+    <item id="text15" href="10-Decorative.xhtml" media-type="application/xhtml+xml"/>
+    <item id="text16" href="LookingAhead.xhtml" media-type="application/xhtml+xml"/>
+    <item id="text17" href="Glossary.xhtml" media-type="application/xhtml+xml"/>
+    <item id="text18" href="Resources.xhtml" media-type="application/xhtml+xml"/>
+    <item id="text19" href="Acknowledgments.xhtml" media-type="application/xhtml+xml"/>
+    <item id="text20" href="sourcefiles.xhtml" media-type="application/xhtml+xml"/>
+    <item id="text21" href="Copyright.xhtml" media-type="application/xhtml+xml"/>
+
     <item id="html14" href="pix/ex1-epub-lg.xhtml" media-type="application/xhtml+xml"/>
     <item id="html15" href="pix/ex1-lg.xhtml" media-type="application/xhtml+xml"/>
     <item id="html16" href="pix/ex6-3d-lg.xhtml" media-type="application/xhtml+xml"/>
@@ -65,6 +73,7 @@
     <item id="html83" href="pix/survey-epub-lg.xhtml" media-type="application/xhtml+xml"/>
     <item id="html84" href="pix/survey-daisy-lg.xhtml" media-type="application/xhtml+xml"/>
     <item id="html90" href="pix/anglesmap-lg.xhtml" media-type="application/xhtml+xml"/>
+
     <item id="image2" href="images/ex1-context.jpg" media-type="image/jpeg"/>
     <item id="image4" href="images/ex1-epub.jpg" media-type="image/jpeg"/>
     <item id="image6" href="images/ex1-daisy.jpg" media-type="image/jpeg"/>
@@ -101,8 +110,19 @@
     <item id="image95" href="images/survey-epub.jpg" media-type="image/jpeg"/>
     <item id="image96" href="images/survey-daisy.jpg" media-type="image/jpeg"/>
     <item id="image97" href="images/ex1.jpg" media-type="image/jpeg"/>
+    <item id="image98" href="images/haptics.png" media-type="image/png"/>
+    <item id="image100" href="images/hydroxides.png" media-type="image/png"/>
+    <item id="image101" href="images/relational1.png" media-type="image/png"/>
+    <item id="image102" href="images/relational2.png" media-type="image/png"/>
+    <item id="image103" href="images/GseventhC.png" media-type="image/png"/>
+    <item id="image104" href="images/GseventhC-annotated.png" media-type="image/png"/>
+    <item id="image106" href="images/cartoon.jpg" media-type="image/jpeg"/>
+
     <item id="audio1" href="src/Figure_11-5.mp3" media-type="audio/mpeg"/>
     <item id="audio2" href="src/Figure_11-6.mp3" media-type="audio/mpeg"/>
+    <item id="audio3" href="src/GseventhC.mp3" media-type="audio/mpeg"/>
+    <item id="audio4" href="src/GseventhC.mid" media-type="application/x-midi" fallback="audio3"/>
+
     <item id="css" href="stylesheet.css" media-type="text/css"/>
     <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
   </manifest>
@@ -111,16 +131,33 @@
     <itemref idref="cover"/>
     <itemref idref="titlepage"/>
     <itemref idref="nav"/>
-    <itemref idref="preface"/>
-    <itemref idref="intro"/>
-    <itemref idref="exemplar1"/>
+    <itemref idref="text1"/>
+    <itemref idref="text2"/>
+    <itemref idref="text3"/>
+    <itemref idref="text4"/>
+    <itemref idref="text5"/>
+    <itemref idref="text6"/>
+    <itemref idref="text7"/>
+    <itemref idref="text8"/>
+    <itemref idref="text9"/>
+    <itemref idref="text10"/>
+    <itemref idref="text11"/>
+    <itemref idref="text12"/>
+    <itemref idref="text13"/>
+    <itemref idref="text14"/>
+    <itemref idref="text15"/>
+    <itemref idref="text16"/>
+    <itemref idref="text17"/>
+    <itemref idref="text18"/>
+    <itemref idref="text19"/>
+    <itemref idref="text20"/>
+    <itemref idref="text21"/>
     <itemref idref="html36" linear="no"/>
     <itemref idref="html37" linear="no"/>
     <itemref idref="html14" linear="no"/>
     <itemref idref="html15" linear="no"/>
     <itemref idref="html19" linear="no"/>
     <itemref idref="html20" linear="no"/>
-    <itemref idref="exemplar2"/>
     <itemref idref="html21" linear="no"/>
     <itemref idref="html22" linear="no"/>
     <itemref idref="html23" linear="no"/>
@@ -128,7 +165,6 @@
     <itemref idref="html25" linear="no"/>
     <itemref idref="html26" linear="no"/>
     <itemref idref="html27" linear="no"/>
-    <itemref idref="exemplar3"/>
     <itemref idref="html28" linear="no"/>
     <itemref idref="html31" linear="no"/>
     <itemref idref="html29" linear="no"/>
@@ -137,24 +173,15 @@
     <itemref idref="html33" linear="no"/>
     <itemref idref="html54" linear="no"/>
     <itemref idref="html55" linear="no"/>
-    <itemref idref="exemplar4"/>
-    <itemref idref="exemplar5"/>
     <itemref idref="html90" linear="no"/>
     <itemref idref="html35" linear="no"/>
     <itemref idref="html34" linear="no"/>
     <itemref idref="html54" linear="no"/>
     <itemref idref="html83" linear="no"/>
     <itemref idref="html84" linear="no"/>
-    <itemref idref="exemplar6"/>
     <itemref idref="html16" linear="no"/>
     <itemref idref="html17" linear="no"/>
-    <itemref idref="exemplar7"/>
     <itemref idref="html18" linear="no"/>
-    <itemref idref="conclusion"/>
-    <itemref idref="resources"/>
-    <itemref idref="acknowledgments"/>
-    <itemref idref="sourcefiles"/>
-    <itemref idref="copyright"/>
   </spine>
 
 </package>

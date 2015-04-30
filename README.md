@@ -27,15 +27,25 @@ Please see this page for more information:
 
 ## Change Log
 
-#### Version 3
+#### Version 2.0
+- Major update with new sections added, including:
+	- Getting Started
+	- Chemistry
+	- Relational Diagrams
+	- Cartoons
+	- Haptics
+	- Music
+	- Glossary
+
+#### Version 1.5
 - HTML5 coding and semantic structure have been updated and enhanced in many ways.
 - Enhancements to EPUB 3 structure, semantics, and metadata.
 - Extensive stylistic updates, including the addition of numerous styles to make the content more readable and more stylish.
 - Sample images are now set up to work both with device double-tap image viewing and separate image pages when needed.
 - The examples have been updated to replace the use of <details> and <summary> with <aside>. This is in keeping with the fact that those elements have been removed from the official HTML5.0 spec, thus they are technically unsupported in EPUB 3. They will probably be added back into the HTML spec with 5.1, but will not be technically valid in EPUB 3 until that happens and until EPUB 3 updates to support 5.1. See more about this here: [https://github.com/IDPF/epubcheck/issues/407#issuecomment-50631597]
 
-#### Version 2
+#### Version 1.2
 Minor updates
 
-#### Version 1
+#### Version 1.0
 Initial release
