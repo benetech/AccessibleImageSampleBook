@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="UND">
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="en">
   <head>
     <meta content="de3ae9bd-1fa2-418e-9561-573e168e9e78" name="dtb:uid"/>
     <meta content="2" name="dtb:depth"/>
@@ -14,76 +14,76 @@
     <content src="Preface.xhtml"/>
   </navPoint>
   <navPoint id="nav2" playOrder="2">
-    <navLabel><text>Introduction</text></navLabel>
-    <content src="Intro.xhtml"/>
-  </navPoint>
-  <navPoint id="nav3" playOrder="3">
     <navLabel><text>Getting Started</text></navLabel>
     <content src="GettingStarted.xhtml"/>
   </navPoint>
-  <navPoint id="nav4" playOrder="4">
+  <navPoint id="nav3" playOrder="3">
     <navLabel><text>Sample 1: Heart and Lung Diagram</text></navLabel>
     <content src="01-HeartLung.xhtml"/>
   </navPoint>
-  <navPoint id="nav5" playOrder="5">
+  <navPoint id="nav4" playOrder="4">
     <navLabel><text>Sample 2: Map of North America</text></navLabel>
     <content src="02-Map.xhtml"/>
   </navPoint>
-  <navPoint id="nav6" playOrder="6">
+  <navPoint id="nav5" playOrder="5">
     <navLabel><text>Sample 3: Charts and Graphs</text></navLabel>
     <content src="03a-Institutional.xhtml#charts"/>
-    <navPoint id="nav7" playOrder="7">
+    <navPoint id="nav6" playOrder="6">
     <navLabel><text>Institutional Discrimination Bar Chart</text></navLabel>
     <content src="03a-Institutional.xhtml"/>
     </navPoint>
-    <navPoint id="nav8" playOrder="8">
+    <navPoint id="nav7" playOrder="7">
     <navLabel><text>Quadratic Functions and Their Graphs</text></navLabel>
     <content src="03b-Quadratic.xhtml"/>
     </navPoint>
     </navPoint>
-  <navPoint id="nav9" playOrder="9">
+  <navPoint id="nav8" playOrder="8">
     <navLabel><text>Sample 4: Relational Diagrams</text></navLabel>
     <content src="04-RelationalDiagrams.xhtml"/>
-    <navPoint id="nav10" playOrder="10">
+    <navPoint id="nav9" playOrder="9">
     <navLabel><text>Radial/Web Diagrams</text></navLabel>
     <content src="04-RelationalDiagrams.xhtml#radial"/>
     </navPoint>
-    <navPoint id="nav11" playOrder="11">
+    <navPoint id="nav10" playOrder="10">
     <navLabel><text>Hierarchy/Tree Diagrams</text></navLabel>
     <content src="04-RelationalDiagrams.xhtml#hierarchy"/>
     </navPoint>
     </navPoint>
-  <navPoint id="nav12" playOrder="12">
+  <navPoint id="nav11" playOrder="11">
     <navLabel><text>Sample 5: Angles on a Survey Map</text></navLabel>
     <content src="05-AnglesSurvey.xhtml"/>
   </navPoint>
-  <navPoint id="nav13" playOrder="13">
+  <navPoint id="nav12" playOrder="12">
     <navLabel><text>Sample 6: Chemistry</text></navLabel>
     <content src="06a-Chemistry.xhtml#chemistry"/>
-    <navPoint id="nav14" playOrder="14">
+    <navPoint id="nav13" playOrder="13">
     <navLabel><text>Chemical Reaction Formula – Basic and Amphoteric Hydroxides</text></navLabel>
     <content src="06a-Chemistry.xhtml"/>
     </navPoint>
-    <navPoint id="nav15" playOrder="15">
+    <navPoint id="nav14" playOrder="14">
     <navLabel><text>Carbon Atom</text></navLabel>
     <content src="06b-CarbonAtom.xhtml"/>
     </navPoint>
     </navPoint>
-  <navPoint id="nav16" playOrder="16">
+  <navPoint id="nav15" playOrder="15">
     <navLabel><text>Sample 7: Cartoons and Comics</text></navLabel>
     <content src="07-Cartoons.xhtml"/>
   </navPoint>
-  <navPoint id="nav17" playOrder="17">
+  <navPoint id="nav16" playOrder="16">
     <navLabel><text>Sample 8: Music</text></navLabel>
     <content src="08-Music.xhtml"/>
   </navPoint>
-  <navPoint id="nav18" playOrder="18">
+  <navPoint id="nav17" playOrder="17">
     <navLabel><text>Sample 9: Haptics</text></navLabel>
     <content src="09-Haptics.xhtml"/>
   </navPoint>
-  <navPoint id="nav19" playOrder="19">
+  <navPoint id="nav18" playOrder="18">
     <navLabel><text>Sample 10: Decorative and Redundant Images</text></navLabel>
     <content src="10-Decorative.xhtml"/>
+  </navPoint>
+  <navPoint id="nav19" playOrder="19">
+    <navLabel><text>The Diagrammar: A Framework for Making Images and Graphics Accessible</text></navLabel>
+    <content src="Diagrammar.xhtml"/>
   </navPoint>
   <navPoint id="nav20" playOrder="20">
     <navLabel><text>Looking Ahead</text></navLabel>

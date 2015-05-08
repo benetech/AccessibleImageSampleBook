@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+<head>
+<title>Sample 5: Angles on a Survey Map </title>
+<link href="stylesheet.css" type="text/css" rel="stylesheet" />
+</head>
+<body xml:lang="en">
+
+<section epub:type="chapter">
+<section>
+<h1>The Diagrammar: A Framework for Making Images and Graphics Accessible</h1>
+<p class="noind">The Diagrammar is a standard way to structure image description data, including multiple descriptions, annotations, and pointers to alternate file formats. The Diagrammar is implemented in XML which is transformed into formatted HTML using XSLT. More information about The Diagrammar is available on the <a href="http://diagramcenter.org/standards-and-practices/content-model.html">DIAGRAM Center website</a>.</p>
+<p class="ind">In this example, The Diagrammar contains multiple image descriptions, a note from the teacher, and a pointer to a tactile graphic.</p>
+<p class="ind">The code used for this example may look like:</p>
+<div class="code">
+<pre><code class="language-xml"><span class="code1">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="code1">&lt;?xml-stylesheet type="text/xsl" href="desc2html.xsl"?&gt;</span>
+<span class="code1">&lt;d:description xml:id="angles-desc" xml:lang="en" xmlns="http://www.daisy.org/ns/z3998/authoring/" xmlns:d="http://www.daisy.org/ns/z3998/authoring/features/description/" xmlns:xlink="http://www.w3.org/1999/xlink"&gt;</span>
+    <span class="code2">&lt;d:head&gt;</span>
+        <span class="code3">&lt;meta property="dc:identifier" content="source-or-self-identification?" /&gt;</span>
+        <span class="code3">&lt;meta property="dc:language" content="en-US" /&gt;</span>
+        <span class="code3">&lt;meta property="diagram:purpose"&gt;Illustrates the relationships between the surveying crew and the tree.&lt;/meta&gt;</span>
+        <span class="code3">&lt;meta property="diagram:targetAge" content="14-18" /&gt;</span>
+        <span class="code3">&lt;meta property="diagram:targetGrade" content="9-12" /&gt;</span>
+        <span class="code3">&lt;meta property="diagram:descriptionQuality" content="7" /&gt;</span>
+        <span class="code3">&lt;meta property="dc:creator" xml:id="author01"&gt;John Doe&lt;/meta&gt;</span>
+        <span class="code3">&lt;meta about="#author01" property="diagram:credentials"&gt;Ph.D. in Civil Engineering&lt;/meta&gt;</span>
+        <span class="code3">&lt;meta property="dc:rights" content="???" /&gt;</span>
+        <span class="code3">&lt;meta property="dc:accessRights"&gt;This resource is for use by academic institutions only.&lt;/meta&gt;</span>
+        <span class="code3">&lt;meta rel="diagram:currentVersion" resource="http://example.com/geometry/k12/angles/current"/&gt;</span>
+        <span class="code3">&lt;meta rel="diagram:thisVersion" resource="http://example.com/geometry/k12/angles/1.2/description.xml"/&gt;</span>
+        <span class="code3">&lt;meta rel="diagram:previousVersion" resource="http://example.com/geometry/k12/angles/1.1/description.xml"/&gt;</span>
+        <span class="code3">&lt;meta rel="diagram:alternateVersion" xml:id="alternateVersion01" resource="http://example.com/math/k12/angles/current"&gt;</span>
+            <span class="code4">&lt;meta property="dc:description"&gt;This description provides the mathematical explanation for calculating angles.&lt;/meta&gt;</span>
+        <span class="code3">&lt;/meta&gt;</span>
+        <span class="code3">&lt;meta rel="diagram:repository" resource="http://example.com/diagram/repository/"&gt;</span>
+            <span class="code4">&lt;meta property="diagram:queryConcept" content="angles"/&gt;</span>
+            <span class="code4">&lt;meta property="diagram:queryConcept" content="calculating"/&gt;</span>
+            <span class="code4">&lt;meta property="diagram:queryConcept" content="triangles"/&gt;</span>
+        <span class="code3">&lt;/meta&gt;</span>
+    <span class="code2">&lt;/d:head&gt;</span>
+    <span class="code2">&lt;d:body&gt;</span>
+        <span class="code3">&lt;d:summary xml:id="summary"&gt;</span>
+            <span class="code4">&lt;p&gt;The image depicts two surveyors measuring the angles between themselves and a tree.&lt;/p&gt;</span>
+        <span class="code3">&lt;/d:summary&gt;</span>
+        <span class="code3">&lt;d:longdesc xml:id="longdesc01"&gt;</span>
+            <span class="code4">&lt;p&gt;Two surveyors, A and P, stand some distance apart on the south bank of a river, looking at a tree, T, that is on the north bank of the river. Points A, P, and T form a triangle. At points A and P, there are two parallel sight lines pointing north and forming angles outside of the triangle. At point P, angle TPA is 53 degrees. The adjacent angle between PT and the northern sight line is 37 degrees. At point A, angle TAP is not labeled, and the adjacent angle formed between AT and that northern sight line is 32 degrees. &lt;/p&gt;</span>
+        <span class="code3">&lt;/d:longdesc&gt;</span>
+        <span class="code3">&lt;annotation ref="longdesc01" role="diagram:comment" by="teacher"&gt;</span>
+            <span class="code4">&lt;p&gt;The distance between the points is not needed.&lt;/p&gt;</span>
+        <span class="code3">&lt;/annotation&gt;</span>
+        <span class="code3">&lt;d:simplifiedLanguageDescription xml:id="simpledesc01"&gt;</span>
+            <span class="code4">&lt;p&gt;T, A, and P are the three points on a triangle. Angle TPA is 53 degrees with an adjacent angle of 37 degrees. The angle adjacent to angle TAP is 32 degrees.&lt;/p&gt;</span>
+        <span class="code3">&lt;/d:simplifiedLanguageDescription&gt;</span>
+        <span class="code3">&lt;d:tactile xml:id="tactile01"&gt;</span>
+            <span class="code4">&lt;object src="http://example.com/tactiles/repository/angles.svg" srctype="image/svg+xml"/&gt;</span>
+            <span class="code4">&lt;d:tour&gt;</span>
+                <span class="code5">&lt;p&gt;In the upper left corner of the tactile…&lt;/p&gt;</span>
+            <span class="code4">&lt;/d:tour&gt;</span>
+        <span class="code3">&lt;/d:tactile&gt;</span>
+        <span class="code3">&lt;d:simplifiedImage xml:id="alt-image"&gt;</span>
+            <span class="code4">&lt;object src="http://example.com/…/angles-lv.svg" srctype="image/svg+xml"/&gt;</span>
+            <span class="code4">&lt;d:tour&gt;</span>
+                <span class="code5">&lt;p&gt;Moving front the top left corner of the image…&lt;/p&gt;</span>
+            <span class="code4">&lt;/d:tour&gt;</span>
+        <span class="code3">&lt;/d:simplifiedImage&gt;</span>
+    <span class="code2">&lt;/d:body&gt;</span>
+<span class="code1">&lt;/d:description&gt;</span></code></pre>
+</div>
+<p class="noind">The Content Model is referenced in an EPUB 3, DAISY, or HTML5 file using the <a href="https://specs.webplatform.org/html-aria/webspecs/master/">aria-describedat</a> attribute which is currently under development. The code to reference the sample description file above (surveymap.xml) may look like:</p>
+<div class="code">
+<pre><code class="language-html"><span class="code1">&lt;img src="images/survey.jpg" alt="survey map with angles" aria-describedat="http://www.example.com/surveymap.xml" /&gt;</span></code></pre>
+</div>
+</section>
+</section>
+
+</body>
+</html>

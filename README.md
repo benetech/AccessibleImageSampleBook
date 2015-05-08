@@ -27,6 +27,14 @@ Please see this page for more information:
 
 ## Change Log
 
+####Version 2.0.1
+- Introduction removed.
+- "The Content Model" was renamed "The Diagrammar" in keeping with official nomenclature.
+- "The Diagrammar" section was moved to its own page after the last sample.
+- The MIDI (which is not supported in EPUB) has been removed and is now just available in the Source files on the website.
+- The Cartoon description was updated.
+- Related Table of Contents and structural changes.
+
 #### Version 2.0
 - Major update with new sections added, including:
 	- Getting Started
