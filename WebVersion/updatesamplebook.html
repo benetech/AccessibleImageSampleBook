@@ -9,52 +9,38 @@
 
 <h1>How to Update the Accessible Image Sample Book (HTML version)</h1>
 
+<h2>Grab the content from GitHub</h2>
+<p>You will need to visit <a href="https://github.com/benetech/AccessibleImageSampleBook">the GitHub repository</a> to obtain a copy of the master documents for the Web Version. Be sure to check out the code and commit it properly when you are done.</p>
+
 <h2>Connect to the Diagram Center’s SFTP</h2>
 
-<p>
-You will need a SFTP client. On the Mac, I use Cyberduck, which is pretty accessible with VoiceOver and keyboard access.  I hear good things about the accessibility of FileZilla for Windows and Linux systems.
-</p>
+<p>You will need a SFTP client. On the Mac, I use Cyberduck, which is pretty accessible with VoiceOver and keyboard access.  I hear good things about the accessibility of FileZilla for Windows and Linux systems.</p>
 
-<p>
-You will need to be given a username and password for sftp://diagramcenter.wpengine.com - you can see Diagram Center staff and Benetech’s IT department for this.  You just enter the username, server name, and password to connect - all other settings are likely to be the defaults.
-</p>
-
-<h2>Once signed into SFTP, download the samplebook folder</h2>
-
-<p>
-If you need to edit more than one file. I encourage you to download the whole thing and make your edits on your computer, then delete the original and reupload the whole thing. If you need to edit just one, it's okay to just get that file, or even to edit it on the live server using your FTP program's tools if it has one.
-</p>
+<p>You will need to be given the host names, username, and password for the FTP - you can see Diagram Center staff and Benetech’s IT department for this.  You just enter the username, server name, and password to connect, all other settings are likely to be the defaults.</p>
 
 <h2>Adding new pages and editing the page number structure</h2>
 
-<p>
-You'll need a text editor to do this; you probably have a favorite already.  I personally use Sublime Text 2 which is fairly usable with VoiceOver but not perfectly so, unfortunately.  TextMate 2.0 is an excellent choice for accessibility on the Mac.  Visual Studio Express or TextPad is pretty accessible with JAWS on Windows.
-<p>
-The following is the HTML structure for the page numbers:
-</p>
+<p>It is always best to update both the Web Version and the EPUB at the same time. Be sure that all of your changes are made in both versions of the files, and that you update all of the version numbers (Title Page, OPF, and Copyright page).</p>
+
+<p>You'll need a text editor to make changes to the files; you probably have a favorite already.  I personally use Sublime Text 2 which is fairly usable with VoiceOver but not perfectly so, unfortunately.  TextMate 2.0 is an excellent choice for accessibility on the Mac.  Visual Studio Express or TextPad is pretty accessible with JAWS on Windows.</p>
+
+<p>The following is the HTML for the page navigation:</p>
 <pre>
 <code>
-&lt;p&gt;
-<br>&nbsp;&lt;a&nbsp;href=&quot;&lt;nameofnextpage&gt;.html&quot;&gt;Next&nbsp;Page&lt;/a&gt;|&lt;a&nbsp;href=&quot;&lt;nameofpreviouspage&gt;.html&quot;&gt;Previous&nbsp;Page&lt;/a&gt;|&lt;a&nbsp;href=&quot;index.html&quot;&gt;Table&nbsp;of&nbsp;Contents&lt;/a&gt;|&lt;a&nbsp;href=&quot;http://diagramcenter.org/&quot;&gt;Diagram&nbsp;Center&nbsp;Home&lt;/a&gt;
-<br>&lt;/p&gt;
+&lt;nav&gt;&lt;p&gt;&lt;a href="<i>nameofnextpage</i>.xhtml"&gt;Next Page&lt;/a&gt;&amp;#xa0;&amp;#xa0;|&amp;#xa0;&amp;#xa0;&lt;a href="<i>nameofpreviouspage</i>.xhtml"&gt;Previous Page&lt;/a&gt;&amp;#xa0;&amp;#xa0;|&amp;#xa0;&amp;#xa0;&lt;a href="nav.xhtml"&gt;Table of Contents&lt;/a&gt;&amp;#xa0;&amp;#xa0;|&amp;#xa0;&amp;#xa0;&lt;a href="http://diagramcenter.org/"&gt;Diagram Center Home&lt;/a&gt;&lt;/p&gt;&lt;/nav&gt;
 </code>
 </pre>
-<p>
-If you get a new page or an updated version of an existing page, you will need to manually add this code twice to the page, once right after the opening body tag and once right before the closing body tag.  If the book gets new pages, don't forget that you'll need to update the names of the next and previous pages for the pages before and after the new page, as well as the new page and the index.
-</p>
+
+<p>In some cases, you may just need to replace all or most of the current Web Version with a new copy based on the latest EPUB file's contents. Be sure to add the nav bar to the top of each page</p>
 
 <h2>Test. No, really, test.</h2>
-<p>
-It is super easy to muck these links up. Make sure the ones you changed all work before you upload the book to the server.
-</p>
+<p>It is super easy to muck these links up. Make sure the ones you changed all work before you upload the book to the server.</p>
 
 <h2>Upload the whole book back to the FTP</h2>
-<p>
-Make sure to delete the old version first, if necessary. If your FTP client has a synchronize command, you can also use that. You're done!
-</p>
+<p>Make sure to delete the old version first, if necessary. If your FTP client has a synchronize command, you can also use that. You're done!</p>
+
 <h2>Contact points</h2>
-<p>
-This document prepared by Katherine Mancuso of Tech Liminal for Julie Noblitt, Diagram Center Community Manager. If you have questions, you should contact Julie first.
-</p>
+<p>This document prepared by Joshua Tallent of Firebrand Technologies for Julie Noblitt, Diagram Center Community Manager. If you have questions, you should contact Julie first.</p>
+
 </body>
 </html>
