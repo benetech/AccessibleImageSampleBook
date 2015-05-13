@@ -28,9 +28,9 @@ Please see this page for more information:
 ## Change Log
 
 ####Version 2.0.2
-- Minor version number consistency updates
-- Source files page updates
-- Release of the Web version of the book
+- Minor version number consistency updates in the EPUB file
+- [Source files page](http://diagramcenter.org/samplebook/SourceFiles/index.xhtml) updates
+- Release of the [Web version of the book](http://diagramcenter.org/samplebook/index.xhtml)
 
 ####Version 2.0.1
 - Introduction removed.
