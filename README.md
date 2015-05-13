@@ -8,7 +8,7 @@ The Accessible Image Sample Book, created by the [DIAGRAM Content Working Group]
 - photographs
 - and more!
 
-Each of the seven chapters in the book shows a different complex image in context of the book it came from, along with helpful tips and the code used to provide the accessible image in a digital book. See (and hear!) the different ways that an image can be made accessible, including:
+Each of the ten chapters in the book shows a different complex image in context of the book it came from, along with helpful tips and the code used to provide the accessible image in a digital book. See (and hear!) the different ways that an image can be made accessible, including:
 
 - short and long descriptions
 - tactile graphics
@@ -26,6 +26,11 @@ Please see this page for more information:
 
 
 ## Change Log
+
+####Version 2.0.2
+- Minor version number consistency updates
+- Source files page updates
+- Release of the Web version of the book
 
 ####Version 2.0.1
 - Introduction removed.

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+<head>
+<title>Sample 2: Map of North America - Accessible Image Sample Book</title>
+<link href="stylesheet.css" type="text/css" rel="stylesheet" />
+</head>
+<body xml:lang="en">
+<nav><p><a href="03a-Institutional.xhtml">Next Page</a>&#xa0;&#xa0;|&#xa0;&#xa0;<a href="01-HeartLung.xhtml">Previous Page</a>&#xa0;&#xa0;|&#xa0;&#xa0;<a href="nav.xhtml">Table of Contents</a>&#xa0;&#xa0;|&#xa0;&#xa0;<a href="http://diagramcenter.org/">Diagram Center Home</a></p></nav>
+
+<section>
+<h1>Sample 2: Map of North America</h1>
+<div class="ex_small">
+	<div class="img_l"><img src="images/map.jpg" alt="map of North America" /></div>
+	<p class="viewlarge">To zoom, <a href="pix/map-lg.xhtml">click here</a>.</p>
+</div>
+<p class="noind">This map of North America in the 1770s is taken from a postsecondary history textbook. The full page where it appears can be seen below.</p>
+<div class="ex_small">
+	<div class="img_p"><img src="images/map-context.jpg" alt="full page for the map of North America" /></div>
+	<p class="viewlarge">To zoom, <a href="pix/map-context-lg.xhtml">click here</a>.</p>
+</div>
+
+<section>
+<h2 id="makeaccessible">Making This Image Accessible</h2>
+<p class="noind">This image can be made accessible by using different levels of descriptive text. The first, a short description, is useful for describing the first level of instructional meaning, which in this case is the location of the border of the Spanish Empire. The second, a longer description that includes tabular data, is used to convey all of the information available in the map.</p>
+<p class="ind">When and why are short descriptions and long descriptions used? A long description may be required given the nature and complexity of the image and the information it conveys. Even when a long description is used, a short description may still be necessary. A caption or a short description should provide enough information for the reader to decide whether to read the long description or not. If the caption conveys sufficient information and is live text, not embedded in the image, a short description may not be needed.</p>
+<p class="ind">How this image description is displayed depends on the reading tool being used. In most mainstream reading tools, the description will not be displayed at all, but in tools designed for accessibility (or mainstream tools with accessibility features enabled), the description could be displayed below the image, voiced as part of the content, or both.</p>
+<p class="ind">The choice of modality varies depending on factors such as the information to be conveyed, grade level, student knowledge and experience, and the image itself. In this case, a tactile graphic is not needed to make this image accessible for braille readers for two reasons: First, because this is a postsecondary text, it is assumed that the reader has more background information and experience than a younger reader would have. Second, the purpose of this image is to identify the Spanish Empire, and this data can be easily understood from a table.</p><p>If the caption is embedded in the image, it will not be readable as live text by the user's assistive technology. The information in the caption needs to be included in the description.</p>
+<p class="ind">Internal experts disagreed about whether to identify the Caribbean islands in the image descriptions. In the image, the islands are shaded as part of the Spanish North American empire, but they are not labeled. In the end, we decided to leave them out of the description since they are not the focus of the image.</p>
+
+<section>
+<h3 id="shorttextoraudio">Short Text or Audio Description</h3>
+<p class="noind">A color map marks the Spanish Empire in North America, which extends into present-day Florida, Georgia, Alabama, Mississippi, Louisiana, Texas, New Mexico, Arizona, and California.</p>
+
+<section>
+<h4 id="shortepub3">EPUB 3</h4>
+<div class="ex_small">
+	<div class="img_l"><img src="images/map-epub.jpg" alt="image description implemented in epub3" /></div>
+	<p class="viewlarge">To zoom, <a href="pix/map-epub-lg.xhtml">click here</a>.</p>
+</div>
+<p class="noind">The image above shows how the short image description would look when implemented in an EPUB 3 file. The code used to create it is:</p>
+<div class="code">
+<pre><code class="language-html"><span class="code1">&lt;figure&gt;</span>
+	<span class="code2">&lt;div&gt;&lt;img aria-describedby="map-desc" src="images/images/map.jpg" alt="map of the Spanish Empire ca. 1770"/&gt;&lt;/div&gt;</span>
+	<span class="code2">&lt;figcaption&gt;</span>
+		<span class="code3">&lt;p&gt;THE SPANISH BORDERLANDS, CA. 1770 In the late eighteenth century, Spain's North American empire extended across what is now the southern United States from Florida through Texas and New Mexico to Canada.&lt;/p&gt;</span>
+		<span class="code3">&lt;aside id="map-desc"&gt;</span>
+			<span class="code4">&lt;p&gt;A color map marks the Spanish Empire in North America, which extends into present-day Florida, Georgia, Alabama, Mississippi, Louisiana, Texas, New Mexico, Arizona, and Califoria.&lt;/p&gt;</span>
+		<span class="code3">&lt;/aside&gt;</span>
+	<span class="code2">&lt;/figcaption&gt;</span>
+<span class="code1">&lt;/figure&gt;</span></code></pre>
+</div>
+</section>
+
+<section>
+<h4 id="shortdaisy">DAISY</h4>
+<div class="ex_small">
+	<div class="img_l"><img src="images/map-daisy.jpg" alt="image description implemented in DAISY" /></div>
+	<p class="viewlarge">To zoom, <a href="pix/map-daisy-lg.xhtml">click here</a>.</p>
+</div>
+<p class="noind">The image above shows how the short image description would look when implemented in a DAISY file. The code used to create it is:</p>
+<div class="code">
+<pre><code class="language-daisy"><span class="code1">&lt;imggroup&gt;</span>
+	<span class="code2">&lt;p&gt;&lt;img id="map1" src="images/map.jpg" alt="map of the Spanish Empire" /&gt;&lt;/p&gt;</span>
+	<span class="code2">&lt;caption&gt;THE SPANISH BORDERLANDS, CA. 1770 In the late eighteenth century, Spain's North American empire extended across what is now the southern United States from Florida through Texas and New Mexico to Canada.&lt;/caption&gt;</span>
+	<span class="code2">&lt;prodnote id="prodnote_000001"&gt;</span>
+		<span class="code3">&lt;p smilref="map.smil#p_000001"&gt;A color map marks the Spanish Empire in North America, which extends into present-day Florida, Georgia, Alabama, Mississippi, Louisiana, Texas, New Mexico, Arizona, and Califoria.&lt;/p&gt;</span>
+	<span class="code2">&lt;/prodnote&gt;</span>
+<span class="code1">&lt;/imggroup&gt;</span></code></pre>
+</div>
+</section>
+</section>
+
+<section>
+<h3 id="longtextoraudio">Long Text or Audio Description</h3>
+<p class="noind">Spain's North American empire, circa 1770, extended across the southern part of the continent, reaching from ocean to ocean. The map shows the Native American populations and various cities throughout the empire. The data is presented in the following table:</p>
+<table class="border">
+	<thead>
+		<tr>
+			<th>Region</th>
+			<th>Native Americans</th>
+			<th>Cities</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>California</td>
+			<td>Miwok, Alta, Chumash, Ipal</td>
+			<td>San Francisco (1776), San Jose (1777), Monterey (1770), San Antonio de Padua (1771), San Luis Obispo (1772), Santa Barbara (1782), Los Angeles (1781), San Gabriel (1771), San Juan Capistrano (1776), San Diego (1769)</td>
+		</tr>
+		<tr>
+			<td>New Mexico</td>
+			<td>Navajo, Pueblo; the Ute tribe is indicated just north of the border</td>
+			<td>Santa Fe</td>
+		</tr>
+		<tr>
+			<td>Texas</td>
+			<td>Comanche, Lipan Apache, Tonkawa, Hasinai, Coahuiltecan; the Wichita and Quapaw tribes are shown north of the border in the Louisiana region.</td>
+			<td>San Antonio</td>
+		</tr>
+		<tr>
+			<td>Mexico</td>
+			<td>Pima</td>
+			<td>Monterrey</td>
+		</tr>
+		<tr>
+			<td>Region along the Gulf of Mexico</td>
+			<td>Creek, Chickasaw, Choctaw, Lower Creek</td>
+			<td>New Orleans</td>
+		</tr>
+		<tr>
+			<td>Florida</td>
+			<td> </td>
+			<td>St. Augustine</td>
+		</tr>
+	</tbody>
+</table>
+
+<section>
+<h4 id="longepub3">EPUB 3</h4>
+<div class="ex_small">
+	<div class="img_p"><img src="images/map-epub-long.jpg" alt="image description implemented in epub3" /></div>
+	<p class="viewlarge">To zoom, <a href="pix/map-epub-long-lg.xhtml">click here</a>.</p>
+</div>
+<p class="noind">The image above shows how the long image description could look when implemented in an EPUB 3 file. The code used to create it is:</p>
+<div class="code">
+<pre><code class="language-html"><span class="code1">&lt;figure&gt;</span>
+	<span class="code2">&lt;div&gt;&lt;img aria-describedby="map-desc" src="images/images/map.jpg" alt="map of the Spanish Empire ca. 1770"/&gt;&lt;/div&gt;</span>
+	<span class="code2">&lt;figcaption&gt;</span>
+		<span class="code3">&lt;p&gt;THE SPANISH BORDERLANDS, CA. 1770 In the late eighteenth century, Spain's North American empire extended across what is now the southern United States from Florida through Texas and New Mexico to Canada.&lt;/p&gt;</span>
+		<span class="code3">&lt;aside id="map-desc"&gt;</span>
+			<span class="code4">&lt;p&gt;Spain's North American empire, circa 1770, extended across the southern part of the continent, reaching from ocean to ocean. The map shows the Native American populations and various cities throughout the empire. The data is presented in the follow table:&lt;/p&gt;</span>
+			<span class="code4">&lt;table&gt;</span>
+				<span class="code5">&lt;thead&gt;</span>
+					<span class="code6">&lt;tr&gt;</span>
+						<span class="code7">&lt;th&gt;Region&lt;/th&gt;</span>
+						<span class="code7">&lt;th&gt;Native Americans&lt;/th&gt;</span>
+						<span class="code7">&lt;th&gt;Cities&lt;/th&gt;</span>
+					<span class="code6">&lt;/tr&gt;</span>
+				<span class="code5">&lt;/thead&gt;</span>
+				<span class="code5">&lt;tbody&gt;</span>
+					<span class="code6">&lt;tr&gt;</span>
+						<span class="code7">&lt;td&gt;California&lt;/td&gt;</span>
+						<span class="code7">&lt;td&gt;Miwok, Alta, Chumash, Ipal&lt;/td&gt;</span>
+						<span class="code7">&lt;td&gt;San Francisco (1776), San Jose (1777), Monterey (1770), San Antonio de Padua (1771), San Luis Obispo (1772), Santa Barbara (1782), Los Angeles (1781), San Gabriel (1771), San Juan Capistrano (1776), San Diego (1769)&lt;/td&gt;</span>
+					<span class="code6">&lt;/tr&gt;</span>
+					<span class="code6">&lt;tr&gt;</span>
+						<span class="code7">&lt;td&gt;New Mexico&lt;/td&gt;</span>
+						<span class="code7">&lt;td&gt;Navajo, Pueblo; the Ute tribe is indicated just north of the border&lt;/td&gt;</span>
+						<span class="code7">&lt;td&gt;Santa Fe&lt;/td&gt;</span>
+					<span class="code6">&lt;/tr&gt;</span>
+					<span class="code6">&lt;tr&gt;</span>
+						<span class="code7">&lt;td&gt;Texas&lt;/td&gt;</span>
+						<span class="code7">&lt;td&gt;Comanche, Lipan Apache, Tonkawa, Hasinai, Coahuiltecan; the Wichita and Quapaw tribes are shown north of the border in the Louisiana region.&lt;/td&gt;</span>
+						<span class="code7">&lt;td&gt;San Antonio&lt;/td&gt;</span>
+					<span class="code6">&lt;/tr&gt;</span>
+					<span class="code6">&lt;tr&gt;</span>
+						<span class="code7">&lt;td&gt;Mexico&lt;/td&gt;</span>
+						<span class="code7">&lt;td&gt;Pima&lt;/td&gt;</span>
+						<span class="code7">&lt;td&gt;Monterrey&lt;/td&gt;</span>
+					<span class="code6">&lt;/tr&gt;</span>
+					<span class="code6">&lt;tr&gt;</span>
+						<span class="code7">&lt;td&gt;Region along the Gulf of Mexico&lt;/td&gt;</span>
+						<span class="code7">&lt;td&gt;Creek, Chickasaw, Choctaw, Lower Creek&lt;/td&gt;</span>
+						<span class="code7">&lt;td&gt;New Orleans&lt;/td&gt;</span>
+					<span class="code6">&lt;/tr&gt;</span>
+					<span class="code6">&lt;tr&gt;</span>
+						<span class="code7">&lt;td&gt;Florida&lt;/td&gt;</span>
+						<span class="code7">&lt;td&gt; &lt;/td&gt;</span>
+						<span class="code7">&lt;td&gt;St. Augustine&lt;/td&gt;</span>
+					<span class="code6">&lt;/tr&gt;</span>
+				<span class="code5">&lt;/tbody&gt;</span>
+			<span class="code4">&lt;/table&gt;</span>
+		<span class="code3">&lt;/aside&gt;</span>
+	<span class="code2">&lt;/figcaption&gt;</span>
+<span class="code1">&lt;/figure&gt;</span></code></pre>
+</div>
+</section>
+
+<section>
+<h4 id="longdaisy">DAISY</h4>
+<div class="ex_small">
+	<div class="img_p"><img src="images/map-daisy-long.jpg" alt="image description implemented in daisy" /></div>
+	<p class="viewlarge">To zoom, <a href="pix/map-daisy-long-lg.xhtml">click here</a>.</p>
+</div>
+<p class="noind">The image above shows how the long image description would look when implemented in a DAISY file. The code used to create it is:</p>
+<div class="code">
+<pre><code class="language-daisy"><span class="code1">&lt;imggroup&gt;</span>
+	<span class="code2">&lt;p&gt;&lt;img id="map1" src="images/map.jpg" alt="map of the Spanish Empire" /&gt;&lt;/p&gt;</span>
+	<span class="code2">&lt;caption imgref="map1"&gt;THE SPANISH BORDERLANDS, CA. 1770 In the late eighteenth century, Spain's North American empire extended across what is now the southern United States from Florida through Texas and New Mexico to Canada.&lt;/caption&gt;</span>
+	<span class="code2">&lt;prodnote id="prodnote_000001"&gt;</span>
+		<span class="code3">&lt;p smilref="map.smil#p_000001"&gt;Spain's North American empire, circa 1770, extended across the southern part of the continent, reaching from ocean to ocean. The map shows the Native American populations and various cities throughout the empire. The data is presented in the following table:&lt;/p&gt;</span>
+		<span class="code3">&lt;table&gt;</span>
+			<span class="code4">&lt;thead&gt;</span>
+				<span class="code5">&lt;tr&gt;</span>
+					<span class="code6">&lt;th&gt;Region&lt;/th&gt;</span>
+					<span class="code6">&lt;th&gt;Native Americans&lt;/th&gt;</span>
+					<span class="code6">&lt;th&gt;Cities&lt;/th&gt;</span>
+				<span class="code5">&lt;/tr&gt;</span>
+			<span class="code4">&lt;/thead&gt;</span>
+			<span class="code4">&lt;tbody&gt;</span>
+				<span class="code5">&lt;tr&gt;</span>
+					<span class="code6">&lt;td&gt;California&lt;/td&gt;</span>
+					<span class="code6">&lt;td&gt;Miwok, Alta, Chumash, Ipal&lt;/td&gt;</span>
+					<span class="code6">&lt;td&gt;San Francisco (1776), San Jose (1777), Monterey (1770), San Antonio de Padua (1771), San Luis Obispo (1772), Santa Barbara (1782), Los Angeles (1781), San Gabriel (1771), San Juan Capistrano (1776), San Diego (1769)&lt;/td&gt;</span>
+				<span class="code5">&lt;/tr&gt;</span>
+				<span class="code5">&lt;tr&gt;</span>
+					<span class="code6">&lt;td&gt;New Mexico&lt;/td&gt;</span>
+					<span class="code6">&lt;td&gt;Navajo, Pueblo; the Ute tribe is indicated just north of the border&lt;/td&gt;</span>
+					<span class="code6">&lt;td&gt;Santa Fe&lt;/td&gt;</span>
+				<span class="code5">&lt;/tr&gt;</span>
+				<span class="code5">&lt;tr&gt;</span>
+					<span class="code6">&lt;td&gt;Texas&lt;/td&gt;</span>
+					<span class="code6">&lt;td&gt;Comanche, Lipan Apache, Tonkawa, Hasinai, Coahuiltecan; the Wichita and Quapaw tribes are shown north of the border in the Louisiana region.&lt;/td&gt;</span>
+					<span class="code6">&lt;td&gt;San Antonio&lt;/td&gt;</span>
+				<span class="code5">&lt;/tr&gt;</span>
+				<span class="code5">&lt;tr&gt;</span>
+					<span class="code6">&lt;td&gt;Mexico&lt;/td&gt;</span>
+					<span class="code6">&lt;td&gt;Pima&lt;/td&gt;</span>
+					<span class="code6">&lt;td&gt;Monterrey&lt;/td&gt;</span>
+				<span class="code5">&lt;/tr&gt;</span>
+				<span class="code5">&lt;tr&gt;</span>
+					<span class="code6">&lt;td&gt;Region along the Gulf of Mexico&lt;/td&gt;</span>
+					<span class="code6">&lt;td&gt;Creek, Chickasaw, Choctaw, Lower Creek&lt;/td&gt;</span>
+					<span class="code6">&lt;td&gt;New Orleans&lt;/td&gt;</span>
+				<span class="code5">&lt;/tr&gt;</span>
+				<span class="code5">&lt;tr&gt;</span>
+					<span class="code6">&lt;td&gt;Florida&lt;/td&gt;</span>
+					<span class="code6">&lt;td&gt; &lt;/td&gt;</span>
+					<span class="code6">&lt;td&gt;St. Augustine&lt;/td&gt;</span>
+				<span class="code5">&lt;/tr&gt;</span>
+			<span class="code4">&lt;/tbody&gt;</span>
+		<span class="code3">&lt;/table&gt;</span>
+	<span class="code2">&lt;/prodnote&gt;</span>
+<span class="code1">&lt;/imggroup&gt;</span></code></pre>
+</div>
+</section>
+</section>
+</section>
+</section>
+
+</body>
+</html>

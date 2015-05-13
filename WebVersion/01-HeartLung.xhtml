@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+<head>
+<title>Sample 1: Heart and Lung Diagram - Accessible Image Sample Book</title>
+<link href="stylesheet.css" type="text/css" rel="stylesheet" />
+</head>
+<body xml:lang="en">
+<nav><p><a href="02-Map.xhtml">Next Page</a>&#xa0;&#xa0;|&#xa0;&#xa0;<a href="GettingStarted.xhtml">Previous Page</a>&#xa0;&#xa0;|&#xa0;&#xa0;<a href="nav.xhtml">Table of Contents</a>&#xa0;&#xa0;|&#xa0;&#xa0;<a href="http://diagramcenter.org/">Diagram Center Home</a></p></nav>
+
+<section>
+<h1>Sample 1: Heart and Lung Diagram</h1>
+<div class="ex_small">
+	<div class="img_p"><img src="images/ex1.jpg" alt="the heart and lungs" /></div>
+	<p class="viewlarge">To zoom, <a href="pix/ex1-lg.xhtml">click here</a>.</p>
+</div>
+<p class="noind">This image of the heart and lungs is taken from a middle school health textbook. The full page where it appears can be seen below.</p>
+<div class="ex_small">
+	<div class="img_p"><img src="images/ex1-context.jpg" alt="full page for heart and lungs image" /></div>
+	<p class="viewlarge">To zoom, <a href="pix/ex1-context-lg.xhtml">click here</a>.</p>
+</div>
+
+<section>
+<h2 id="makeaccessible">Making This Image Accessible</h2>
+<p class="noind">This image can be made accessible with an image description or by using a tactile graphic. The choice of modality varies depending on factors such as the information to be conveyed, grade level, student knowledge and experience, and the image itself.</p>
+<p class="ind">Written image descriptions are widely used for images that illustrate a process or simple concept. Tactile images are used for images or diagrams where the physical relationships between elements of the image are important.</p>
+<p class="ind">How the image description is displayed depends on the reading tool being used. In most mainstream reading tools, the description will not be displayed at all, but in tools designed for accessibility (or mainstream tools with accessibility features enabled) the description could be displayed below the image, voiced as part of the content, or both.</p>
+<p class="ind">This is an example of an image in which text is embedded in the image and is not accessible. The content needs to be extracted from the image and included in the description.</p>
+
+<section>
+<h3 id="textoraudio">Text or Audio Description</h3>
+<p class="noind">Systems in Sync. The circulatory and respiratory systems work together to transport oxygen-rich blood through the body.</p><p>A diagram shows a cross-section of a heart between two lungs.  Red arrows show the path of oxygen-rich blood cells. Blue arrows show the path of oxygen-poor blood.</p>
+<ol>
+	<li>Oxygen-rich blood cells travel to the heart from the lungs.</li>
+	<li>The heart pumps enriched blood cells. They travel through the arteries to the body.</li>
+	<li>Throughout the body, red blood cells deliver oxygen to cells and remove carbon dioxide.</li>
+	<li>Veins carry oxygen-poor blood back to the heart.</li>
+	<li>The heart pumps blood back to the lungs to eliminate carbon dioxide and absorb oxygen.</li>
+	<li>Red blood cells move through the lungs, taking in oxygen and exchanging it for carbon dioxide.</li>
+</ol>
+
+<section>
+<h4 id="epub3">EPUB 3</h4>
+<div class="ex_small">
+	<div class="img_p"><img src="images/ex1-epub.jpg" alt="image description implemented in epub3" /></div>
+	<p class="viewlarge">To zoom, <a href="pix/ex1-epub-lg.xhtml">click here</a>.</p>
+</div>
+<p class="noind">The image above shows how the image description would look when implemented in an EPUB 3 file. The code used to create it is:</p>
+<div class="code">
+<pre><code class="language-html"><span class="code1">&lt;figure&gt;</span>
+	<span class="code2">&lt;div&gt;&lt;img aria-describedby="heart-and-lungs-desc" src="images/images/ex1.jpg" alt="The heart and lungs"/&gt;&lt;/div&gt;</span>
+	<span class="code2">&lt;figcaption&gt;</span>
+		<span class="code3">&lt;p&gt;The heart and lungs&lt;/p&gt;</span>
+		<span class="code3">&lt;aside id="heart-and-lungs-desc" class="desc"&gt;</span>
+			<span class="code4">&lt;p&gt;Systems in Sync. The circulatory and respiratory systems work together to transport oxygen-rich blood through the body.&lt;/p&gt;</span>
+			<span class="code4">&lt;p&gt;A diagram shows a cross-section of a heart between two lungs. Red arrows show the path of oxygen-rich blood cells. Blue arrows show the path of oxygen-poor blood.&lt;/p&gt;</span>
+			<span class="code4">&lt;ol&gt;</span>
+				<span class="code5">&lt;li&gt;Oxygen-rich blood cells travel to the heart from the lungs.&lt;/li&gt;</span>
+				<span class="code5">&lt;li&gt;The heart pumps enriched blood cells. They travel through the arteries to the body.&lt;/li&gt;</span>
+				<span class="code5">&lt;li&gt;Throughout the body, red blood cells deliver oxygen to cells and remove carbon dioxide.&lt;/li&gt;</span>
+				<span class="code5">&lt;li&gt;Veins carry oxygen-poor blood back to the heart.&lt;/li&gt;</span>
+				<span class="code5">&lt;li&gt;The heart pumps blood back to the lungs to eliminate carbon dioxide and absorb oxygen.&lt;/li&gt;</span>
+				<span class="code5">&lt;li&gt;Red blood cells move through the lungs, taking in oxygen and exchanging it for carbon dioxide.&lt;/li&gt;</span>
+			<span class="code4">&lt;/ol&gt;</span>
+		<span class="code3">&lt;/aside&gt;</span>
+	<span class="code2">&lt;/figcaption&gt;</span>
+<span class="code1">&lt;/figure&gt;</span></code></pre>
+</div>
+</section>
+
+<section>
+<h4 id="daisy">DAISY</h4>
+<div class="ex_small">
+	<div class="img_l"><img src="images/ex1-daisy.jpg" alt="image description implemented in DAISY" /></div>
+	<p class="viewlarge">To zoom, <a href="pix/ex1-daisy-lg.xhtml">click here</a>.</p>
+</div>
+<p class="noind">The image above shows how the image description would look when implemented in a DAISY file. The code used to create it is:</p>
+<div class="code">
+<pre><code class="language-daisy"><span class="code1">&lt;imggroup&gt;</span>
+	<span class="code2">&lt;p&gt;&lt;img id="ex_1" src="images/ex1.jpg" alt="the heart and lungs" /&gt;&lt;/p&gt;</span>
+	<span class="code2">&lt;prodnote id="prodnote_000001"&gt;</span>
+		<span class="code3">&lt;p smilref="examplar1.smil#p_000001"&gt;Systems in Sync. The circulatory and respiratory systems work together to transport oxygen-rich blood through the body.&lt;/p&gt;</span>
+		<span class="code3">&lt;p&gt;A diagram shows a cross-section of a heart between two lungs. Red arrows show the path of oxygen-rich blood cells. Blue arrows show the path of oxygen-poor blood.&lt;/p&gt;</span>
+		<span class="code3">&lt;list type="ol"&gt;</span>
+			<span class="code4">&lt;li&gt;Oxygen-rich blood cells travel to the heart from the lungs.&lt;/li&gt;</span>
+			<span class="code4">&lt;li&gt;The heart pumps enriched blood cells. They travel through the arteries to the body.&lt;/li&gt;</span>
+			<span class="code4">&lt;li&gt;Throughout the body, red blood cells deliver oxygen to cells and remove carbon dioxide.&lt;/li&gt;</span>
+			<span class="code4">&lt;li&gt;Veins carry oxygen-poor blood back to the heart.&lt;/li&gt;</span>
+			<span class="code4">&lt;li&gt;The heart pumps blood back to the lungs to eliminate carbon dioxide and absorb oxygen.&lt;/li&gt;</span>
+			<span class="code4">&lt;li&gt;Red blood cells move through the lungs, taking in oxygen and exchanging it for carbon dioxide.&lt;/li&gt;</span>
+		<span class="code3">&lt;/list&gt;</span>
+	<span class="code2">&lt;/prodnote&gt;</span>
+<span class="code1">&lt;/imggroup&gt;</span></code></pre>
+</div>
+</section>
+</section>
+
+<section>
+<h3 id="tactile">Tactile Graphic</h3>
+<p class="noind">A tactile graphic allows the image to be interpreted manually. This graphic was developed for <a href="http://www.tactilegraphics.org/microcapsule.xhtml">microcapsule paper</a> production.</p>
+<div class="ex_small">
+	<div class="img_p"><img src="images/heart-lung-tg.jpg" alt="picture of tactile graphic example" /></div>
+	<p class="viewlarge">To zoom, <a href="pix/heart-lung-tg-lg.xhtml">click here</a>.</p>
+</div>
+<div class="ex_small">
+	<div class="img_p"><img src="images/heart-lung-tg-p2.jpg" alt="second page of tactile graphic example" /></div>
+	<p class="viewlarge">To zoom, <a href="pix/heart-lung-tg-p2-lg.xhtml">click here</a>.</p>
+</div>
+<p class="noind">The first image contains the diagram and the key. The second image includes all of the numbered text that is part of the original image.</p>
+</section>
+</section>
+</section>
+
+</body>
+</html>

@@ -8,12 +8,12 @@
     <dc:language>en-us</dc:language>
     <dc:identifier id="uuid_id">de3ae9bd-1fa2-418e-9561-573e168e9e78</dc:identifier>
         <meta property="identifier-type" refines="#uuid_id">uuid</meta>
-        <meta property="dcterms:modified">2015-05-08T08:06:00Z</meta>
+        <meta property="dcterms:modified">2015-05-13T08:43:00Z</meta>
     <dc:publisher id="en_publisher" xml:lang="en-us">DIAGRAM Center</dc:publisher>
     <dc:rights id="en_rights" xml:lang="en-us">All rights reserved.</dc:rights>
     <dc:date>2013-08-23</dc:date>
     <meta property="ibooks:specified-fonts">true</meta>
-    <meta property="ibooks:version">2.0.1</meta>
+    <meta property="ibooks:version">2.0.2</meta>
     <meta name="cover" content="cover-image" />
   </metadata>
 

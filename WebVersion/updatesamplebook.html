@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Update The Sample Book</title>
+    <meta content="http://www.w3.org/1999/xhtml; charset=utf-8" http-equiv="Content-Type"/><link href="stylesheet.css" type="text/css" rel="stylesheet"/><style type="text/css">
+		@page { margin-bottom: 5.000000pt; margin-top: 5.000000pt; }</style></head>
+  	<meta name="robots" content="noindex">
+  <body>
+
+<h1>How to Update the Accessible Image Sample Book (HTML version)</h1>
+
+<h2>Connect to the Diagram Center’s SFTP</h2>
+
+<p>
+You will need a SFTP client. On the Mac, I use Cyberduck, which is pretty accessible with VoiceOver and keyboard access.  I hear good things about the accessibility of FileZilla for Windows and Linux systems.
+</p>
+
+<p>
+You will need to be given a username and password for sftp://diagramcenter.wpengine.com - you can see Diagram Center staff and Benetech’s IT department for this.  You just enter the username, server name, and password to connect - all other settings are likely to be the defaults.
+</p>
+
+<h2>Once signed into SFTP, download the samplebook folder</h2>
+
+<p>
+If you need to edit more than one file. I encourage you to download the whole thing and make your edits on your computer, then delete the original and reupload the whole thing. If you need to edit just one, it's okay to just get that file, or even to edit it on the live server using your FTP program's tools if it has one.
+</p>
+
+<h2>Adding new pages and editing the page number structure</h2>
+
+<p>
+You'll need a text editor to do this; you probably have a favorite already.  I personally use Sublime Text 2 which is fairly usable with VoiceOver but not perfectly so, unfortunately.  TextMate 2.0 is an excellent choice for accessibility on the Mac.  Visual Studio Express or TextPad is pretty accessible with JAWS on Windows.
+<p>
+The following is the HTML structure for the page numbers:
+</p>
+<pre>
+<code>
+&lt;p&gt;
+<br>&nbsp;&lt;a&nbsp;href=&quot;&lt;nameofnextpage&gt;.html&quot;&gt;Next&nbsp;Page&lt;/a&gt;|&lt;a&nbsp;href=&quot;&lt;nameofpreviouspage&gt;.html&quot;&gt;Previous&nbsp;Page&lt;/a&gt;|&lt;a&nbsp;href=&quot;index.html&quot;&gt;Table&nbsp;of&nbsp;Contents&lt;/a&gt;|&lt;a&nbsp;href=&quot;http://diagramcenter.org/&quot;&gt;Diagram&nbsp;Center&nbsp;Home&lt;/a&gt;
+<br>&lt;/p&gt;
+</code>
+</pre>
+<p>
+If you get a new page or an updated version of an existing page, you will need to manually add this code twice to the page, once right after the opening body tag and once right before the closing body tag.  If the book gets new pages, don't forget that you'll need to update the names of the next and previous pages for the pages before and after the new page, as well as the new page and the index.
+</p>
+
+<h2>Test. No, really, test.</h2>
+<p>
+It is super easy to muck these links up. Make sure the ones you changed all work before you upload the book to the server.
+</p>
+
+<h2>Upload the whole book back to the FTP</h2>
+<p>
+Make sure to delete the old version first, if necessary. If your FTP client has a synchronize command, you can also use that. You're done!
+</p>
+<h2>Contact points</h2>
+<p>
+This document prepared by Katherine Mancuso of Tech Liminal for Julie Noblitt, Diagram Center Community Manager. If you have questions, you should contact Julie first.
+</p>
+</body>
+</html>

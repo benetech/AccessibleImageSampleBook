@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+<head>
+<title>Sample 9: Haptics - Accessible Image Sample Book</title>
+<link href="stylesheet.css" type="text/css" rel="stylesheet" />
+</head>
+<body xml:lang="en">
+<nav><p><a href="10-Decorative.xhtml">Next Page</a>&#xa0;&#xa0;|&#xa0;&#xa0;<a href="08-Music.xhtml">Previous Page</a>&#xa0;&#xa0;|&#xa0;&#xa0;<a href="nav.xhtml">Table of Contents</a>&#xa0;&#xa0;|&#xa0;&#xa0;<a href="http://diagramcenter.org/">Diagram Center Home</a></p></nav>
+
+<section>
+<h1>Sample 9: Haptics</h1>
+<div class="ex_small">
+	<div class="img_l"><img src="images/haptics.png" alt="haptics" /></div>
+</div>
+<h2>Making This Image Accessible</h2>
+<p class="first">This image can be made accessible using haptic technology. <a href="http://en.wikipedia.org/wiki/Haptic_technology" target="_blank">Haptic technology</a> uses force, vibration, or other physical effects to convey information to a user via the sense of touch. A common mainstream example of this is a cell phone that vibrates with an incoming message or call. Haptics would be used here to make the image accessible by causing the outline of the shape to vibrate when the reader runs their finger over it. This allows them to sense the size and shape of the object. To experience how it works please visit the Educational Testing Service <a href="http://ets-research.org/mhakkinen/etsdc/simpleviewer.html?epub=epub_content/geobook">(ETS) created sample book</a> with a haptic enabled device. To test if a device is haptics compatible visit the <a href="http://ets-research.org/mhakkinen/h/">Haptics test site</a>.</p>
+<p class="ind">While using haptic technology for accessible images is still in the initial phases of development and is currently best suited to lines and basic shapes like the one in this example, many groups are experimenting with different haptic feedback devices. For example, some groups are experimenting with electrostatic haptics to create different sensations by varying the perceived &#8220;friction&#8221; as a finger moves across a tablet screen. Developers of the <a href="http://www.monash.edu.au/news/show/new-device-puts-vision-impaired-in-the-picture" target="_blank">GraVVITAS device</a> out of Monash University in Australia, are experimenting with haptic feedback devices that can allow a user to feel the outline of common shapes by exploring a touchscreen using a haptic glove. ETS is working to implement haptic feedback for STEM eBooks with graphic content. To read more on their research please visit <a href="http://diagramcenter.org/integrating-haptic-feedback.html?preview=true&amp;preview_id=1152&amp;preview_nonce=5e9451ba9f">Integrating Haptic Feedback for Image-based STEM Content within HTML and eTextBooks</a></p>
+<h3>How to Add a Haptic SVG to an EPUB 3 File</h3>
+<p class="first">1. Create or open an existing EPUB XHTML content file. Add the SVG image to the original file. Below is a sample XHTML file with the SVG&#8212;in this case, a square shape is included</p>
+<div class="code">
+<pre><code class="language-html"><span class="code1">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+	<span class="code1">&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:epub="http://www.idpf.org/2007/ops"&gt;</span>
+	<span class="code1">&lt;head&gt;</span>
+	<span class="code1">&lt;meta charset="utf-8"&gt;&lt;/meta&gt;</span>
+	<span class="code1">&lt;title&gt;Haptic SVG Test&lt;/title&gt;</span>
+	<span class="code1">&lt;link rel="stylesheet" type="text/css" href="epub.css"/&gt;</span>
+	<span class="code1">&lt;/head&gt;</span>
+	<span class="code1">&lt;body&gt;</span>
+	<span class="code1">&lt;section id="ch1"&gt;</span>
+		<span class="code2">&lt;h1&gt;Haptic SVG Test&lt;/h1&gt;</span>
+		<span class="code2">&lt;div id="haptic-svg-test"&gt;</span>
+			<span class="code3">&lt;p&gt;The SVG image, a square, has been added below.&lt;/p&gt;</span>
+			<span class="code3">&lt;!-- SVG Head --&gt;</span>
+			<span class="code3">&lt;svg baseProfile="full" height="400" version="1.1" width="100%" viewBox="0.0 0.0 371.0 363.0" fill="none" stroke="none" stroke-linecap="square" stroke-miterlimit="10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"&gt;</span>
+				<span class="code4">&lt;!-- SVG Content --&gt;</span>
+				<span class="code4">&lt;clipPath id="p.0"&gt;</span>
+					<span class="code5">&lt;path d="m0 0l371.0 0l0 363.0l-371.0 0l0 -363.0z" clip-rule="nonzero"&gt;&lt;/path&gt;</span>
+				<span class="code4">&lt;/clipPath&gt;</span>
+				<span class="code4">&lt;g clip-path="url(#p.0)"&gt;</span>
+					<span class="code5">&lt;!--id values, such as p1, f1 and l1 are used to indicate portions of the SVG image that will generate different vibration effects when touched --&gt;</span>
+					<span class="code5">&lt;path id="p1" fill="#000000" fill-opacity="0.0" d="m0 0l371.53543 0l0 363.03412l-371.53543 0z" fill-rule="nonzero"&gt;&lt;/path&gt;</span>
+					<span class="code5">&lt;path id="f1" fill="#ea9999" d="m112.0 96.0l160.0 0l0 160.0l-160.0 0z" fill-rule="nonzero"&gt;&lt;/path&gt;</span>
+					<span class="code5">&lt;path id="l1" stroke="#ff0000" stroke-width="8.0" stroke-linejoin="round" stroke-linecap="butt" d="m112.0 96.0l160.0 0l0 160.0l-160.0 0z" fill-rule="nonzero"&gt;&lt;/path&gt;</span>
+				<span class="code4">&lt;/g&gt;</span>
+			<span class="code3">&lt;/svg&gt;</span>
+			<span class="code3">&lt;p&gt;The text continues here . . .&lt;/p&gt;</span>
+		<span class="code2">&lt;/div&gt;</span>
+	<span class="code1">&lt;/section&gt;</span>
+	<span class="code1">&lt;/body&gt;</span>
+	<span class="code1">&lt;/html&gt;</span></code></pre>
+</div>
+
+<p class="first">2. Create a JavaScript file to add vibration to the SVG. Below is code from a sample file called, &#8220;vibrate.js.&#8221;</p>
+<div class="code">
+<pre><code class="language-js"><span class="code1">// Haptic Effects while Touching elements in the page, with effect determined by id values</span>
+	<span class="code1">// This approach uses the W3C Vibration API, supported in Android browsers such as Chrome and Firefox</span>
+	<span class="code1">var curVibe = 0;</span>
+	<span class="code1">var tmint;</span>
+	<span class="code1">function initHaptics() {</span>
+		<span class="code2">// Listen for touchmove and touchend.</span>
+		<span class="code2">document.body.addEventListener(&#8220;touchmove", buzzPos, false);</span>
+		<span class="code2">document.body.addEventListener(&#8220;touchend", buzzStop, false);</span>
+		<span class="code2">tmint = window.setInterval(buzzTime, 100);</span>
+	<span class="code1">}</span>
+	<span class="code1">function buzzTime() {</span>
+		<span class="code2">window.navigator.vibrate(curVibe);</span>
+	<span class="code1">}</span>
+	<span class="code1">function buzzPos(event) {</span>
+		<span class="code2">// This makes vibration work in Chrome Beta for Android (although it can cause other issues).</span>
+		<span class="code2">event.preventDefault();</span>
+		<span class="code2">// Find the element where the touch occurs.</span>
+		<span class="code2">e = document.elementFromPoint(event.touches.item(0).clientX, event.touches.item(0).clientY);</span>
+		<span class="code2">curVibe = 0;</span>
+		<span class="code2">// If the element is part of the SVG we wish to have vibrate, make it so.</span>
+		<span class="code2">if (e.id == &#8220;f1") { window.navigator.vibrate(75); curVibe = 75; }</span>
+		<span class="code2">if (e.id == &#8220;li") { window.navigator.vibrate(75); curVibe = 75; }</span>
+	<span class="code1">}</span>
+	<span class="code1">function buzzStop() {</span>
+		<span class="code2">// This makes vibration work in Chrome Beta for Android (although it can cause other issues).</span>
+		<span class="code2">event.preventDefault();</span>
+		<span class="code2">// Stop vibration.</span>
+		<span class="code2">window.navigator.vibrate(0);</span>
+		<span class="code2">curVibe = 0;</span>
+	<span class="code1">}</span></code></pre>
+</div>
+
+<p class="first">3. Add a link to the JavaScript file in the &lt;head&gt; section of the .xhtml file as shown.</p>
+<div class="code">
+<pre><code class="language-html"><span class="code1">&lt;head&gt;</span>
+		<span class="code2">&lt;meta charset="utf-8"&gt;&lt;/meta&gt;</span>
+		<span class="code2">&lt;title&gt;Haptic SVG Test&lt;/title&gt;</span>
+		<span class="code2">&lt;link rel="stylesheet" type="text/css" href="epub.css"/&gt;</span>
+		<span class="code2"><b>&lt;script type="text/javascript" src="test.js"&gt;&lt;/script&gt;</b></span>
+	<span class="code1">&lt;/head&gt;</span></code></pre>
+</div>
+
+<p class="first">4. Modify the .xhtml file to call the appropriate JavaScript function on page load, as shown.</p>
+<div class="code">
+<pre><code class="language-html"><span class="code1"><b>&lt;body onload="initHaptics()"&gt;</b></span></code></pre>
+</div>
+
+<p class="first">5. Make sure EPUB3 will support the JavaScript file by adding an &#8220;item&#8221; for it to the &#8220;manifest&#8221; in the package.opf file as shown. </p>
+<div class="code">
+<pre><code class="language-xml"><span class="code1">&lt;manifest&gt;</span>
+		<span class="code2">. . .</span>
+		<span class="code2"><b>&lt;!-- Javascript files --&gt;</b></span>
+		<span class="code2"><b>&lt;item id="js" href="test.js" media-type="text/javascript"/&gt;</b></span>
+		<span class="code2">. . .</span>
+	<span class="code1">&lt;/manifest&gt;</span></code></pre>
+</div>
+
+<p class="first">6. Make sure the .xhtml file is set to support both SVG and scripting by adding a &#8220;properties&#8221; attribute to its &#8220;item&#8221; entry in the &#8220;manifest&#8221; of the package.opf file as shown.</p>
+<div class="code">
+<pre><code class="language-html"><span class="code1">&lt;manifest&gt;</span>
+		<span class="code2">. . .</span>
+		<span class="code2"><b>&lt;item id="t1" href="text.xhtml" media-type="application/xhtml+xml" properties="svg scripted"/&gt;</b></span>
+		<span class="code2">. . .</span>
+	<span class="code1">&lt;/manifest&gt;</span></code></pre>
+</div>
+
+<p class="first">7. The book is now ready. Open this publication in Readium (web version) in Chrome or FireFox on an Android tablet with vibration capabilities. Go to the page of the EPUB containing the SVG image and explore the images with a single finger. As the finger passes over the shape a vibration should be felt.</p>
+</section>
+
+</body>
+</html>
