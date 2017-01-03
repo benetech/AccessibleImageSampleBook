@@ -27,6 +27,9 @@ Please see this page for more information:
 
 ## Change Log
 
+####Version 2.0.3
+- Change "Canada" to "California" in the Maps chapter.
+
 ####Version 2.0.2
 - Minor version number consistency updates in the EPUB file
 - [Source files page](http://diagramcenter.org/samplebook/SourceFiles/index.xhtml) updates
