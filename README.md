@@ -27,6 +27,9 @@ Please see this page for more information:
 
 ## Change Log
 
+####Version 2.0.4
+- Remove spurious thumbs.db files
+
 ####Version 2.0.3
 - Change "Canada" to "California" in the Maps chapter.
 
