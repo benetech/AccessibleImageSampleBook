@@ -8,12 +8,12 @@
     <dc:language>en-us</dc:language>
     <dc:identifier id="uuid_id">de3ae9bd-1fa2-418e-9561-573e168e9e78</dc:identifier>
         <meta property="identifier-type" refines="#uuid_id">uuid</meta>
-        <meta property="dcterms:modified">2015-05-13T08:43:00Z</meta>
+        <meta property="dcterms:modified">2017-09-29T11:43:00Z</meta>
     <dc:publisher id="en_publisher" xml:lang="en-us">DIAGRAM Center</dc:publisher>
     <dc:rights id="en_rights" xml:lang="en-us">All rights reserved.</dc:rights>
     <dc:date>2013-08-23</dc:date>
     <meta property="ibooks:specified-fonts">true</meta>
-    <meta property="ibooks:version">2.0.2</meta>
+    <meta property="ibooks:version">2.1</meta>
     <meta name="cover" content="cover-image" />
   </metadata>
 
@@ -36,13 +36,14 @@
     <item id="text12" href="08-Music.xhtml" media-type="application/xhtml+xml"/>
     <item id="text13" href="09-Haptics.xhtml" media-type="application/xhtml+xml"/>
     <item id="text14" href="10-Decorative.xhtml" media-type="application/xhtml+xml"/>
-    <item id="text15" href="Diagrammar.xhtml" media-type="application/xhtml+xml"/>
-    <item id="text16" href="LookingAhead.xhtml" media-type="application/xhtml+xml"/>
-    <item id="text17" href="Glossary.xhtml" media-type="application/xhtml+xml"/>
-    <item id="text18" href="Resources.xhtml" media-type="application/xhtml+xml"/>
-    <item id="text19" href="Acknowledgments.xhtml" media-type="application/xhtml+xml"/>
-    <item id="text20" href="sourcefiles.xhtml" media-type="application/xhtml+xml"/>
-    <item id="text21" href="Copyright.xhtml" media-type="application/xhtml+xml"/>
+    <item id="text15" href="11-Multimedia.xhtml" media-type="application/xhtml+xml"/>
+    <item id="text16" href="Diagrammar.xhtml" media-type="application/xhtml+xml"/>
+    <item id="text17" href="LookingAhead.xhtml" media-type="application/xhtml+xml"/>
+    <item id="text18" href="Glossary.xhtml" media-type="application/xhtml+xml"/>
+    <item id="text19" href="Resources.xhtml" media-type="application/xhtml+xml"/>
+    <item id="text20" href="Acknowledgments.xhtml" media-type="application/xhtml+xml"/>
+    <item id="text21" href="sourcefiles.xhtml" media-type="application/xhtml+xml"/>
+    <item id="text22" href="Copyright.xhtml" media-type="application/xhtml+xml"/>
 
     <item id="html14" href="pix/ex1-epub-lg.xhtml" media-type="application/xhtml+xml"/>
     <item id="html15" href="pix/ex1-lg.xhtml" media-type="application/xhtml+xml"/>
@@ -73,6 +74,8 @@
     <item id="html83" href="pix/survey-epub-lg.xhtml" media-type="application/xhtml+xml"/>
     <item id="html84" href="pix/survey-daisy-lg.xhtml" media-type="application/xhtml+xml"/>
     <item id="html90" href="pix/anglesmap-lg.xhtml" media-type="application/xhtml+xml"/>
+    <item id="html91" href="pix/ADE_captions.xhtml" media-type="application/xhtml+xml"/>
+    <item id="html92" href="pix/readium_captions.xhtml" media-type="application/xhtml+xml"/>
 
     <item id="image2" href="images/ex1-context.jpg" media-type="image/jpeg"/>
     <item id="image4" href="images/ex1-epub.jpg" media-type="image/jpeg"/>
@@ -117,6 +120,8 @@
     <item id="image103" href="images/GseventhC.png" media-type="image/png"/>
     <item id="image104" href="images/GseventhC-annotated.png" media-type="image/png"/>
     <item id="image106" href="images/cartoon.jpg" media-type="image/jpeg"/>
+    <item id="image107" href="images/ADE_captions.jpeg" media-type="image/jpeg"/>
+    <item id="image108" href="images/readium_captions.jpeg" media-type="image/jpeg"/>
 
     <item id="audio1" href="src/Figure_11-5.mp3" media-type="audio/mpeg"/>
     <item id="audio2" href="src/Figure_11-6.mp3" media-type="audio/mpeg"/>
@@ -151,6 +156,7 @@
     <itemref idref="text19"/>
     <itemref idref="text20"/>
     <itemref idref="text21"/>
+    <itemref idref="text22"/>
     <itemref idref="html36" linear="no"/>
     <itemref idref="html37" linear="no"/>
     <itemref idref="html14" linear="no"/>
@@ -181,6 +187,8 @@
     <itemref idref="html16" linear="no"/>
     <itemref idref="html17" linear="no"/>
     <itemref idref="html18" linear="no"/>
+    <itemref idref="html91" linear="no"/>
+    <itemref idref="html92" linear="no"/>
   </spine>
 
 </package>

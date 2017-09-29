@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+<head>
+<title>Sample 11: Accessible Multimedia</title>
+<link href="stylesheet.css" type="text/css" rel="stylesheet" />
+</head>
+<body xml:lang="en">
+<section epub:type="chapter">
+<h1>Sample 11: Accessible Multimedia</h1>
+<p class="first">The term “multimedia” can be used to cover a wide range of non-text objects, such as images, video and audio clips, and interactive objects, all of which can be included in electronic materials of all types.  Regardless of how multimedia is presented, though, it can always pose significant challenges to users who are deaf, hard-of-hearing, blind or visually impaired.  Modern delivery formats, such as HTML and EPUB, now offer users with sensory disabilities much greater access to multimedia, incorporating not only captions and audio descriptions but also providing accessible mechanisms to control the media itself.  Markup languages have improved greatly in recent years, giving authors and developers more options than ever before to provide accessible media, and user agents (Web browsers, e-book reading systems, etc.) are now beginning to widely support these new features.  Authoring tools are also beginning to provide support for accessibility features, primarily captions and, to a lesser extent, audio descriptions.</p>
+<p class="ind">In practical terms, creating and delivering accessible multimedia requires several specific considerations:</p>
+<ol>
+	<li>Accessible media player<br/>The accessibility of a media player is largely determined two criteria:
+		<ul>
+			<li>Whether the controls can be discovered and operated by assistive technology, such as a screen reader, and by a keyboard alone, i.e., without the use of a mouse.</li>
+			<li>The media player’s capability to play captions and descriptions.</li>
+		</ul>
+		All Web browsers have media players with various levels of accessibility. One way to ensure that a video player is accessible is to provide a custom-built accessible video player and include it in a Web page or EPUB packet.</li>
+	<li>Audio descriptions<br/>Audio descriptions (also known as video descriptions or simply descriptions) make visual media accessible to people who are blind or visually impaired by providing descriptive narration of key visual elements. There are two distinct elements in providing audio descriptions:
+		<ul>
+			<li>Description authoring – how to effectively and efficiently describe key visual elements and record the description audio track. This typically involves writing and editing a description script that is either narrated and recorded or read by text-to-speech software. </li>
+			<li>Description delivery – how to embed the description audio track or otherwise ensure that the audio descriptions play with the video.  This almost always requires providing two versions of a video, one with audio descriptions and one without.</li>
+		</ul></li>
+	<li>Captions<br/>Captions render dialogue and narration as text on the screen; they also indicate important non-speech information such as sound effects, music and laughter.  There are two distinct elements in providing captions:
+		<ul>
+			<li>Caption authoring – how to create synchronized, accurate and useful captions.</li>
+			<li>Caption delivery -  how to embed a properly formatted caption file or otherwise ensure that the captions play with the video.  Captions can either be open (everyone can always see them) or closed (a viewer can turn the captions on or off.)</li>
+		</ul></li>
+</ol>
+<p class="first">The DIAGRAM Center and the National Center for Accessible Media (NCAM) have published instructions for creating accessible multimedia in its <a href="http://diagramcenter.org/research.html#multimedia">Resources for Providing Accessible Multimedia</a>. This document is a comprehensive review of the known stable solutions, explores the areas of rapid flux, and gives best practices that will remain useful even as technology changes. Please refer to the <a href="http://diagramcenter.org/research.html#multimedia">Resources for Providing Accessible Multimedia</a> for instructions, solutions, examples and much more information on all of the above criteria for creating and delivering accessible multimedia. </p>
+<p class="ind">*However, there is one significant exception that is not covered in the <a href="http://diagramcenter.org/research.html#multimedia">Resources</a> document: the technical aspects of delivering a captioned video in an EPUB document. </p>
+<p class="ind">While applications exist for embedding a video into an EPUB document, there currently are no tools that allow authors to include closed captions with the video.  Captions must therefore be added manually after the EPUB has been exported from its source application.  One approach for doing so is outlined below.  Please note that the method below requires some knowledge about the structure of EPUB documents, and is not intended to represent a full tutorial on the creation of e-books or of captioned videos.</p>
+<h2>Inserting a closed-captioned video into an EPUB document (October 19, 2016)</h2>
+<p class="first">The tools used in this example are <a href="http://www.adobe.com/products/indesign.html">Adobe InDesign</a>, <a href="http://www.barebones.com/products/bbedit/">BBEdit</a> and <a href="https://sigil-ebook.com/">Sigil</a>.  </p>
+<ol>
+	<li>Using a caption-editing tool such as <a href="http://www.synchrimedia.com/">Movie Captioner</a>, NCAM's soon-to-be-released <a href="http://ncam.wgbh.org/invent_build/web_multimedia/cadet">CADET</a> or a text editor such as <a href="http://www.barebones.com/products/bbedit/">BBEdit</a>, create a caption track for the video.  Save the track as <a href="https://w3c.github.io/webvtt/">WebVTT</a>, a timed-text format which is supported by all major browsers and some e-book readers.</li>
+	<li>Open Adobe InDesign and create, lay out and style the source document.  Embed the video (saved as an MP4 file) directly into the source file.  Export the EPUB.</li>
+	<li>Using <a href="https://sigil-ebook.com/">Sigil</a> or another EPUB editing tool, open the EPUB file (filename.epub) and click on the Video folder.  Using the editor's tools, open the Video folder and add the WebVTT file (in Sigil, choose File &gt; Add &gt; Existing Files).</li>
+	<li>Click on the .opf file (filename.opf).  Find the &lt;manifest&gt; and add the WebVTT file to the list of items.  For example:<br />
+<pre><code class="language-html"><span class="code1">&lt;item id=&quot;[filename].vtt&quot; href=&quot;../Video/[filename].vtt&quot; media-type=&quot;text/vtt&quot;/&gt;</span></code></pre></li>
+	<li>Open the text file  (filename.xhtml) containing the content for the EPUB.  Search for the &lt;<a href="http://www.w3.org/TR/2014/REC-html5-20141028/embedded-content-0.html#the-video-element">video</a>&gt; element, and add the &lt;<a href="http://www.w3.org/TR/2014/REC-html5-20141028/embedded-content-0.html#the-track-element">track</a>&gt; element (which will <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/track">point to the WebVTT file</a>).  For example:<br/>
+<pre><code class="language-html"><span class="code1">&lt;video id=&quot;_idVideo000&quot; poster=&quot;../Images/5.png&quot; controls=&quot;controls&quot;&gt;</span>
+	<span class="code2">&lt;source src=&quot;../Video/[filename].mp4&quot; type=&quot;video/mp4&quot; /&gt;</span>
+	<span class="code3">&lt;track kind=&quot;captions&quot; src=&quot;../Video/[filename].vtt&quot; srclang=&quot;en&quot; label=&quot;Captions&quot; default=&quot;default&quot; /&gt;</span>
+<span class="code1">&lt;/video&gt;</span></code></pre></li>
+<li>Save the .epub file.</li>
+<li>Open the EPUB in a reading system, such as <a href="http://readium.org/">Readium</a>.  Play the video and toggle the captions on using the CC button (or other caption control) in the player.</li>
+<li>If the captions are not visible, it may be necessary to adjust the positioning of the text so that it is visible over the video region.  To do so, open the WebVTT file in a text editor and add <a href="https://w3c.github.io/webvtt/#cue-settings">positioning cues</a>.  A simple way to position the captions is to use the <a href="https://www.speechpad.com/captions/webvtt">line cue setting</a>, which specifies the vertical positioning of the captions.  For example, the following line setting will position the text 90% from the top of the video region:<br/>00:00:18.300 --&gt; 00:00:19.350 line:90%<br/>What's the matter?</li>
+</ol>
+<p class="first"><a href="http://ncamftp.wgbh.org/geoff/epubcctest/testtest3.epub">Download this demonstration file</a> to see a captioned video embedded within an EPUB.  The captions will be visible using <a href="http://readium.org/">Readium</a>, <a href="http://calibre-ebook.com/">Calibre</a> and <a href="http://www.adobe.com/solutions/ebook/digital-editions.html">Adobe Digital Editions</a> (other e-book reading systems may also display them), but the visual characteristics of the text may vary from one system to the next due to differences in how WebVTT captions are supported. </p>
+<p class="first">Below are images of captions displayed in Readium and ADE:</p>
+<p class="first"><b>Example of captions displayed in Readium:</b></p>
+<div class="ex_small">
+	<div class="img_p"><img src="images/readium_captions.jpeg" alt="Example of captions displayed in Readium" /></div>
+	<p class="viewlarge">To zoom, double-tap the image or <a href="pix/readium_captions.xhtml">click here</a>.</p>
+</div>
+<p class="first"><b>Example of captions displayed in ADE:</b></p>
+<div class="ex_small">
+	<div class="img_p"><img src="images/ADE_captions.jpeg" alt="Example of captions displayed in ADE" /></div>
+	<p class="viewlarge">To zoom, double-tap the image or <a href="pix/ADE_captions.xhtml">click here</a>.</p>
+</div>
+</section>
+</body>
+</html>

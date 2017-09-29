@@ -82,30 +82,34 @@
     <content src="10-Decorative.xhtml"/>
   </navPoint>
   <navPoint id="nav19" playOrder="19">
+    <navLabel><text>Sample 11: Accessible Multimedia</text></navLabel>
+    <content src="11-Multimedia.xhtml"/>
+  </navPoint>
+  <navPoint id="nav20" playOrder="20">
     <navLabel><text>The Diagrammar: A Framework for Making Images and Graphics Accessible</text></navLabel>
     <content src="Diagrammar.xhtml"/>
   </navPoint>
-  <navPoint id="nav20" playOrder="20">
+  <navPoint id="nav21" playOrder="21">
     <navLabel><text>Looking Ahead</text></navLabel>
     <content src="LookingAhead.xhtml"/>
   </navPoint>
-  <navPoint id="nav21" playOrder="21">
+  <navPoint id="nav22" playOrder="22">
     <navLabel><text>Glossary</text></navLabel>
     <content src="Glossary.xhtml"/>
   </navPoint>
-  <navPoint id="nav22" playOrder="22">
+  <navPoint id="nav23" playOrder="23">
     <navLabel><text>Guidelines, Tutorials, and Other Resources</text></navLabel>
     <content src="Resources.xhtml"/>
   </navPoint>
-  <navPoint id="nav23" playOrder="23">
+  <navPoint id="nav24" playOrder="24">
     <navLabel><text>Acknowledgments</text></navLabel>
     <content src="Acknowledgments.xhtml"/>
   </navPoint>
-  <navPoint id="nav24" playOrder="24">
+  <navPoint id="nav25" playOrder="25">
     <navLabel><text>Source Files and Image Citations</text></navLabel>
     <content src="sourcefiles.xhtml"/>
   </navPoint>
-  <navPoint id="nav25" playOrder="25">
+  <navPoint id="nav26" playOrder="26">
     <navLabel><text>Notice</text></navLabel>
     <content src="Copyright.xhtml"/>
   </navPoint>
