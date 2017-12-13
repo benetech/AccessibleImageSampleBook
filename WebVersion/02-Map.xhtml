@@ -40,7 +40,7 @@
 <p class="noind">The image above shows how the short image description would look when implemented in an EPUB 3 file. The code used to create it is:</p>
 <div class="code">
 <pre><code class="language-html"><span class="code1">&lt;figure&gt;</span>
-	<span class="code2">&lt;div&gt;&lt;img aria-describedby="map-desc" src="images/images/map.jpg" alt="map of the Spanish Empire ca. 1770"/&gt;&lt;/div&gt;</span>
+	<span class="code2">&lt;div&gt;&lt;img src="images/images/map.jpg" alt="map of the Spanish Empire ca. 1770"/&gt;&lt;/div&gt;</span>
 	<span class="code2">&lt;figcaption&gt;</span>
 		<span class="code3">&lt;p&gt;THE SPANISH BORDERLANDS, CA. 1770 In the late eighteenth century, Spain's North American empire extended across what is now the southern United States from Florida through Texas and New Mexico to California.&lt;/p&gt;</span>
 		<span class="code3">&lt;aside id="map-desc"&gt;</span>
@@ -124,11 +124,20 @@
 <p class="noind">The image above shows how the long image description could look when implemented in an EPUB 3 file. The code used to create it is:</p>
 <div class="code">
 <pre><code class="language-html"><span class="code1">&lt;figure&gt;</span>
-	<span class="code2">&lt;div&gt;&lt;img aria-describedby="map-desc" src="images/images/map.jpg" alt="map of the Spanish Empire ca. 1770"/&gt;&lt;/div&gt;</span>
-	<span class="code2">&lt;figcaption&gt;</span>
-		<span class="code3">&lt;p&gt;THE SPANISH BORDERLANDS, CA. 1770 In the late eighteenth century, Spain's North American empire extended across what is now the southern United States from Florida through Texas and New Mexico to California.&lt;/p&gt;</span>
-		<span class="code3">&lt;aside id="map-desc"&gt;</span>
-			<span class="code4">&lt;p&gt;Spain's North American empire, circa 1770, extended across the southern part of the continent, reaching from ocean to ocean. The map shows the Native American populations and various cities throughout the empire. The data is presented in the follow table:&lt;/p&gt;</span>
+	<span class="code2">&lt;div&gt;&lt;img src="images/images/map.jpg" alt="map of the Spanish Empire ca. 1770"/&gt;&lt;/div&gt;</span>
+	<span class="code2">&lt;figcaption id="fig-02"&gt;</span>
+		<span class="code3">&lt;p&gt;THE SPANISH BORDERLANDS, CA. 1770 In the late eighteenth century, Spain's North American empire extended across what is now the southern United States from Florida through Texas and New Mexico to California. &lt;a epub:type="noteref" role="doc-noteref" href="#map-desc"&gt;Description&lt;/a&gt;</span>
+	<span class="code2">&lt;/figcaption&gt;</span>
+<span class="code1">&lt;/figure&gt;</span>
+<p>...</p>
+</code>
+</pre>
+</div>
+<p>The below detailed description can be placed anywhere in this document.  It is not recommended to visibly hide this description making it only available to certain assistive technologies as others who do not use those technologies will not have access to this information.</p>       
+<div class="code"><pre><code class="language-html">
+<p>...</p>
+<span class="code1">&lt;aside id="map-desc" epub:type="footnote" role="doc-footnote" id="heart-and-lungs-desc"&gt;</span>			
+        <span class="code2">&lt;p&gt;&lt;a epub:type="backlink" role="doc-backlink" href="#fig-02"&gt;Figure 2.&lt;/a&gt;Spain's North American empire, circa 1770, extended across the southern part of the continent, reaching from ocean to ocean. The map shows the Native American populations and various cities throughout the empire. The data is presented in the follow table:&lt;/p&gt;</span>
 			<span class="code4">&lt;table&gt;</span>
 				<span class="code5">&lt;thead&gt;</span>
 					<span class="code6">&lt;tr&gt;</span>
@@ -170,9 +179,9 @@
 					<span class="code6">&lt;/tr&gt;</span>
 				<span class="code5">&lt;/tbody&gt;</span>
 			<span class="code4">&lt;/table&gt;</span>
-		<span class="code3">&lt;/aside&gt;</span>
-	<span class="code2">&lt;/figcaption&gt;</span>
-<span class="code1">&lt;/figure&gt;</span></code></pre>
+<span class="code1">&lt;/aside&gt;</span>
+</code>
+</pre>
 </div>
 </section>
 

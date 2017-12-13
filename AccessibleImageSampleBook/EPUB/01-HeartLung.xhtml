@@ -40,18 +40,24 @@
 <section>
 <h4 id="epub3">EPUB 3</h4>
 <div class="ex_small">
-	<div class="img_p"><img src="images/ex1-epub.jpg" alt="image description implemented in epub3" /></div>
+	<div class="img_p"><img src="images/ex1-epub.png" alt="image description implemented in epub3" /></div>
 	<p class="viewlarge">To zoom, double-tap the image or <a href="pix/ex1-epub-lg.xhtml">click here</a>.</p>
 </div>
 <p class="noind">The image above shows how the image description would look when implemented in an EPUB 3 file. The code used to create it is:</p>
 <div class="code">
 <pre><code class="language-html"><span class="code1">&lt;figure&gt;</span>
-	<span class="code2">&lt;div&gt;&lt;img aria-describedby="heart-and-lungs-desc" src="images/images/ex1.jpg" alt="The heart and lungs"/&gt;&lt;/div&gt;</span>
-	<span class="code2">&lt;figcaption&gt;</span>
-		<span class="code3">&lt;p&gt;The heart and lungs&lt;/p&gt;</span>
-		<span class="code3">&lt;aside id="heart-and-lungs-desc" class="desc"&gt;</span>
-			<span class="code4">&lt;p&gt;Systems in Sync. The circulatory and respiratory systems work together to transport oxygen-rich blood through the body.&lt;/p&gt;</span>
-			<span class="code4">&lt;p&gt;A diagram shows a cross-section of a heart between two lungs. Red arrows show the path of oxygen-rich blood cells. Blue arrows show the path of oxygen-poor blood.&lt;/p&gt;</span>
+	<span class="code2">&lt;div&gt;&lt;img src="images/images/ex1.jpg" alt="A cross-section view of oxygen-rich blood flows between the heart and lungs."/&gt;&lt;/div&gt;</span>
+	   <span class="code2">&lt;figcaption id="fig-01"&gt;</span>
+       <span class="code3">&lt;p&gt;The heart and lungs&lt;/p&gt; &lt;a epub:type="noteref" role="doc-noteref" href="#heart-and-lungs-desc"&gt;Description&lt;/a&gt;</span>
+        <span class="code2">&lt;/figcaption&gt;</span>
+        <span class="code1">&lt;/figure&gt;</span>
+        ...
+        <p></p>
+        
+    <span class="code1">&lt;aside epub:type="footnote" role="doc-footnote" id="heart-and-lungs-desc"&gt;</span>
+        <p></p>
+			<span class="code3">&lt;p&gt;&lt;a epub:type="backlink" role="doc-backlink" href="#fig-01"&gt;Figure 1.&lt;/a&gt;Systems in Sync. The circulatory and respiratory systems work together to transport oxygen-rich blood through the body.&lt;/p&gt;</span>
+			<span class="code3">&lt;p&gt;A diagram shows a cross-section of a heart between two lungs. Red arrows show the path of oxygen-rich blood cells. Blue arrows show the path of oxygen-poor blood.&lt;/p&gt;</span>
 			<span class="code4">&lt;ol&gt;</span>
 				<span class="code5">&lt;li&gt;Oxygen-rich blood cells travel to the heart from the lungs.&lt;/li&gt;</span>
 				<span class="code5">&lt;li&gt;The heart pumps enriched blood cells. They travel through the arteries to the body.&lt;/li&gt;</span>
@@ -60,9 +66,9 @@
 				<span class="code5">&lt;li&gt;The heart pumps blood back to the lungs to eliminate carbon dioxide and absorb oxygen.&lt;/li&gt;</span>
 				<span class="code5">&lt;li&gt;Red blood cells move through the lungs, taking in oxygen and exchanging it for carbon dioxide.&lt;/li&gt;</span>
 			<span class="code4">&lt;/ol&gt;</span>
-		<span class="code3">&lt;/aside&gt;</span>
-	<span class="code2">&lt;/figcaption&gt;</span>
-<span class="code1">&lt;/figure&gt;</span></code></pre>
+    <span class="code1">&lt;/aside&gt;</span>
+</code>
+</pre>
 </div>
 </section>
 

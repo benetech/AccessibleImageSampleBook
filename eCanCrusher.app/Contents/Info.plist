@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist SYSTEM "file://localhost/System/Library/DTDs/PropertyList.dtd">
+<plist version="0.9">
+<dict>
+   <key>CFBundleExecutable</key>
+   <string>eCanCrusher</string>
+   <key>CFBundleName</key>
+   <string>eCanCrusher</string>
+   <key>CFBundleIdentifier</key>
+   <string>com.rorohiko.eCanCrusher</string>
+   <key>CFBundleInfoDictionaryVersion</key>
+   <string>6.0</string>
+   <key>CFBundleVersion</key>
+   <string>1.2.0.2.19</string>
+   <key>CFBundleDevelopmentRegion</key>
+   <string>en</string>
+   <key>CFBundlePackageType</key>
+   <string>APPL</string>
+   <key>CFBundleSignature</key>
+   <string>????</string>
+   <key>NSHumanReadableCopyright</key>
+   <string>1.2.0</string>
+   <key>CFBundleShortVersionString</key>
+   <string>1.2.0</string>
+   <key>CFBundleIconFile</key>
+   <string>App</string>
+   <key>LSMinimumSystemVersion</key>
+   <string>10.7</string>
+   <key>CFBundleDocumentTypes</key>
+   <array>
+      <dict>
+         <key>CFBundleTypeName</key>
+         <string>All</string>
+         <key>CFBundleTypeOSTypes</key>
+         <array>
+            <string>****</string>
+         </array>
+         <key>CFBundleTypeExtensions</key>
+         <array>
+            <string>*</string>
+         </array>
+         <key>CFBundleTypeRole</key>
+         <string>None</string>
+      </dict>
+   </array>
+
+</dict>
+</plist>
