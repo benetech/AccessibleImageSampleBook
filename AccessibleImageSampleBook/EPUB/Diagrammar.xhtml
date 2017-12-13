@@ -67,9 +67,9 @@
     <span class="code2">&lt;/d:body&gt;</span>
 <span class="code1">&lt;/d:description&gt;</span></code></pre>
 </div>
-<p class="noind">The Content Model is referenced in an EPUB 3, DAISY, or HTML5 file using the <a href="https://specs.webplatform.org/html-aria/webspecs/master/">aria-describedat</a> attribute which is currently under development. The code to reference the sample description file above (surveymap.xml) may look like:</p>
+<p class="noind">The Content Model is referenced in an EPUB 3, DAISY, or HTML5 file using standard HTML anchor links. The code to reference the sample description file above (surveymap.xml) may look like:</p>
 <div class="code">
-<pre><code class="language-html"><span class="code1">&lt;img src="images/survey.jpg" alt="survey map with angles" aria-describedat="http://www.example.com/surveymap.xml" /&gt;</span></code></pre>
+<pre><code class="language-html"><span class="code1">&lt;img src="images/survey.jpg" alt="survey map with angles"&gt;&lt;a href="http://www.example.com/surveymap.xml"&gt;Description&lt;/a&gt;</span></code></pre>
 </div>
 </section>
 </section>

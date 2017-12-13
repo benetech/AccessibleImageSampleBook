@@ -36,12 +36,12 @@
 <h4 id="shortepub3">EPUB 3</h4>
 <div class="ex_small">
 	<div class="img_l"><img src="images/soc-epub.jpg" alt="image description implemented in epub3" /></div>
-	<p class="viewlarge">To zoom, double-tap the image or <a href="pix/soc-epub-lg.xhtml">click here</a>.</p>
+	<p class="viewlarge">To zoom, <a href="pix/soc-epub-lg.xhtml">click here</a>.</p>
 </div>
 <p class="noind">The image above shows how the short image description would look when implemented in an EPUB 3 file. The code used to create it is:</p>
 <div class="code">
 <pre><code class="language-html"><span class="code1">&lt;figure&gt;</span>
-	<span class="code2">&lt;div&gt;&lt;img aria-describedby="soc-desc" src="images/images/soc.jpg" alt="bar chart of institutional discrimination"/&gt;&lt;/div&gt;</span>
+	<span class="code2">&lt;div&gt;&lt;img src="images/images/soc.jpg" alt="bar chart of institutional discrimination"/&gt;&lt;/div&gt;</span>
 	<span class="code2">&lt;figcaption&gt;</span>
 		<span class="code3">&lt;p&gt;Figure 9.2 Buying a House: Institutional Discrimination and Predatory Lending&lt;/p&gt;</span>
 		<span class="code3">&lt;aside id="soc-desc"&gt;</span>
@@ -129,16 +129,28 @@
 <h4 id="longepub3">EPUB 3</h4>
 <div class="ex_small">
 	<div class="img_p"><img src="images/soc-epub-long.jpg" alt="image description implemented in EPUB 3" /></div>
-	<p class="viewlarge">To zoom, double-tap the image or <a href="pix/soc-epub-long-lg.xhtml">click here</a>.</p>
+	<p class="viewlarge">To zoom, <a href="pix/soc-epub-long-lg.xhtml">click here</a>.</p>
 </div>
 <p class="noind">The image above shows how the long image description would look when implemented in an EPUB 3 file. The code used to create it is: </p>
 <div class="code">
 <pre><code class="language-html"><span class="code1">&lt;figure&gt;</span>
-	<span class="code2">&lt;div&gt;&lt;img aria-describedby="soc-desc" src="images/images/soc.jpg" alt="bar chart of institutional discrimination"/&gt;&lt;/div&gt;</span>
+	<span class="code2">&lt;div&gt;&lt;img src="images/images/soc.jpg" alt="bar chart of institutional discrimination"/&gt;&lt;/div&gt;</span>
 	<span class="code2">&lt;figcaption&gt;</span>
-		<span class="code3">&lt;p&gt;Figure 9.2 Buying a House: Institutional Discrimination and Predatory Lending&lt;/p&gt;</span>
-		<span class="code3">&lt;aside id="soc-desc"&gt;</span>
-			<span class="code4">&lt;table&gt;</span>
+		<span class="code3">&lt;figcaption id="fig-03"&gt;Figure 9.2 Buying a House: Institutional Discrimination and Predatory Lending&lt;a epub:type="noteref" role="doc-noteref" href="#soc-desc"&gt;Description&lt;/a&gt;</span>
+ 	<span class="code2">&lt;/figcaption&gt;</span>		
+  	<span class="code1">&lt;/figure&gt;</span>		
+       
+<p>...</p>
+</code>
+</pre>
+</div>
+<p>The below detailed description can be placed anywhere in this document.  It is not recommended to visibly hide this description making it only available to certain assistive technologies as others who do not use those technologies will not have access to this information.</p>       
+<div class="code"><pre><code class="language-html">
+<p>...</p>
+
+<span class="code1">&lt;aside id="soc-desc" epub:type="footnote" role="doc-footnote" id="soc-desc"&gt;</span>			
+        <span class="code2">&lt;p&gt;&lt;a epub:type="backlink" role="doc-backlink" href="#fig-03"&gt;Figure 3.&lt;/a&gt;&lt;/p&gt;</span>
+        <span class="code4">&lt;table&gt;</span>
 				<span class="code5">&lt;thead&gt;</span>
 					<span class="code6">&lt;tr&gt;</span>
 						<span class="code7">&lt;th&gt; &lt;/th&gt;</span>
@@ -168,9 +180,9 @@
 					<span class="code6">&lt;/tr&gt;</span>
 				<span class="code5">&lt;/tbody&gt;</span>
 			<span class="code4">&lt;/table&gt;</span>
-		<span class="code3">&lt;/aside&gt;</span>
-	<span class="code2">&lt;/figcaption&gt;</span>
-<span class="code1">&lt;/figure&gt;</span></code></pre>
+		<span class="code1">&lt;/aside&gt;</span>
+</code>
+</pre>
 </div>
 </section>
 
