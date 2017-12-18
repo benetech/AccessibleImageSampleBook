@@ -11,7 +11,7 @@
 <navMap>
   <navPoint id="nav1" playOrder="1">
     <navLabel><text>Preface</text></navLabel>
-    <content src="Preface.xhtml"/>
+    <content src="preface.xhtml"/>
   </navPoint>
   <navPoint id="nav2" playOrder="2">
     <navLabel><text>Getting Started</text></navLabel>
@@ -99,11 +99,11 @@
   </navPoint>
   <navPoint id="nav23" playOrder="23">
     <navLabel><text>Guidelines, Tutorials, and Other Resources</text></navLabel>
-    <content src="Resources.xhtml"/>
+    <content src="resources.xhtml"/>
   </navPoint>
   <navPoint id="nav24" playOrder="24">
     <navLabel><text>Acknowledgments</text></navLabel>
-    <content src="Acknowledgments.xhtml"/>
+    <content src="acknowledgments.xhtml"/>
   </navPoint>
   <navPoint id="nav25" playOrder="25">
     <navLabel><text>Source Files and Image Citations</text></navLabel>
@@ -111,7 +111,7 @@
   </navPoint>
   <navPoint id="nav26" playOrder="26">
     <navLabel><text>Notice</text></navLabel>
-    <content src="Copyright.xhtml"/>
+    <content src="copyright.xhtml"/>
   </navPoint>
 </navMap>
 
