@@ -1,0 +1,15 @@
+<p>Dec 22, 2017</p>
+
+<h2>History</h2>
+
+<p>Our <a href="html-standards-v1.html">previous recomendations on how to do long descriptions</a>, are still valid as longdesc can be a viable solution for a web based images, but not all browsers and assistive technologies have adopted this but this currently only works for images.  The other recomendaton using aria-describedby which works in EPUB documents as well as webpages that can work on any web element not just images, has also not received widespread adoption and is limited to simple text containing no enhanced markup such as lists, tables, etc.</p>
+
+<h2>Current Recommendation</h2>
+
+<p>A simple way to link an image, table, etc. to its extended description, is by adding a link immediately after the item having alt text of "Description" (which could be a small clickable image such as <img src="http://diagramcenter.org/wp-content/uploads/2017/12/MoreInfo.png" alt="Description" /> which links to the extended description either on the same page or to a separate page of descriptions.  Also adding the new ARIA 1.1 role semantics (doc-noteref, doc-footnote, doc-backlink) to the linkage to and back from the extended description to semantically bind the image with its extended description and return link back to where the image was located.  Here is a working example of this for the web <a href="http://diagramcenter.org/extended-image-description-examples.html">extended description bidirectional linking technique.</a>  Here is how to <a href="http://diagramcenter.org/59-image-guidelines-for-epub-3.html#extended-description">add this bidirectional linking in EPUB</a>.
+</p>
+
+<h2>Future</h2>
+<p>
+Now that <a href="https://www.w3.org/TR/wai-aria-1.1/">ARIA 1.1</a> is now a W3C recommendation the new <a href="https://www.w3.org/TR/wai-aria-1.1/#aria-details">aria-details</a> which links to a html summary/details, our hope is that we can recommend this technique for adding extended image descriptions once the reading systems and assistive technology implement this new standard for both HTML and EPUB documents.
+</p>

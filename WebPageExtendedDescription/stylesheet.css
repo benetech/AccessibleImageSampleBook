@@ -1,0 +1,313 @@
+@namespace h "http://www.w3.org/1999/xhtml";
+/* ############################################# */
+/* ################ Foundational ############### */
+/* ############################################# */
+body {
+    font-family: "Roman", serif;
+}
+p, li {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5em;
+    widows: 2;
+    orphans: 2;
+}
+
+a:focus, a:active, a:hover {
+  outline-width: 1px;
+  outline-style: dashed;
+  outline-color: red;
+}
+
+:target {
+  border: 2px solid black;
+}
+/* ############################################# */
+/* ################## Headings ################# */
+/* ############################################# */
+h1, h2, h3, h4, h5, h6 {
+  page-break-after:avoid;
+  -epub-hyphens: none !important;
+  hyphens: none !important;
+  font-family: "Sans", sans-serif;
+}
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 0;
+  margin-top: 1.5em;
+  font-weight: bold;
+}
+h2 {
+  text-align: left;
+  font-size: 1.6em;
+  margin-bottom: 0;
+  margin-top: 1em;
+  font-weight: bold;
+}
+h3 {
+  text-align: left;
+  font-size: 1.4em;
+  margin-bottom: 0;
+  margin-top: 1em;
+  font-weight: normal;
+}
+h4 {
+  text-align: left;
+  font-size: 1.1em;
+  margin-bottom: 0;
+  margin-top: 0.5em;
+  font-weight: bold;
+}
+
+/* ############################################# */
+/* ################## Paragraphs ############### */
+/* ############################################# */
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: justify;
+  widows: 2;
+  orphans: 2;
+}
+
+p.title {
+  margin-top: 3em;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3em;
+  font-family: sans-serif;
+}
+p.revision {
+  margin-top: 2em;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1em;
+  font-family: sans-serif;
+}
+p.sig {
+  text-align: left;
+  margin-left: 60%;
+  text-indent: 0;
+}
+
+.ind {text-indent: 2em;}
+.noind {text-indent: 0;}
+.center {
+  text-align: center;
+  text-indent: 0;
+}
+.first {
+  text-indent: 0;
+  margin-top: 2em;
+}
+.option {
+  margin-top: 1.2em;
+  text-align: left;
+  text-indent: 0;
+  font-weight: bold;
+}
+
+/* ############################################# */
+/* ################### NAV doc ################# */
+/* ############################################# */
+nav[epub\:type~='landmarks'], nav[epub\:type~='page-list'] {
+   display: none;
+   visibility: hidden;
+}
+.hidden {
+  display:none;
+}
+
+nav ol {
+  padding-left: 0;
+}
+ol.notlist li {
+  display: block;
+}
+nav ol li { /* toc1 */
+  text-align: left;
+    text-indent: -1.5em;
+    margin-left: 1.5em;
+}
+nav ol ol li { /* toc2 */
+  text-align: left;
+    text-indent: -1.5em;
+    margin-left: 3em;
+}
+
+
+/* ############################################# */
+/* ################### Margins ################# */
+/* ############################################# */
+.mt20 {margin-top: 0.5em;}
+.mt30 {margin-top: 1em;}
+.mt60 {margin-top: 2em;}
+.mt120 {margin-top: 4em;}
+
+
+/* ############################################# */
+/* #################### Tables ################# */
+/* ############################################# */
+table.border {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+table.border th, table.border td {
+  border: 1px solid black;
+  padding: 5px;
+  vertical-align: top;
+}
+
+/* ############################################# */
+/* ################### Images ################## */
+/* ############################################# */
+body.fullpage {
+  margin: 0;
+  padding: 0;
+}
+img.centered {
+   display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+div.ex_small {
+  text-align: center;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+div.img_p {
+  width: 60%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+div.img_p img {
+  max-width: 100%;
+}
+div.img_l {
+  width: 90%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+div.img_l img {
+  max-width: 100%;
+}
+p.viewlarge, p.caption {
+  text-align: center;
+  text-indent: 0;
+  margin: 0;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+
+/* ############################################# */
+/* #################### Code ################### */
+/* ############################################# */
+div.code {
+  margin: 1em 0.5em;
+  padding: 1em;
+  background-color: #d3d3d3;
+}
+pre {
+  display: inline;
+  font-family: monospace;
+  white-space: normal;
+  margin: 0;
+  tab-size: 0;
+  font-family: monospace;
+}
+span.code1 {
+  display: block;
+  margin: 0 0 0 0;
+  line-height: 1.4em;
+  text-align: left;
+  text-indent: 0;
+  font-family: monospace;
+}
+span.code2 {
+  display: block;
+  margin: 0 0 0 1em;
+  line-height: 1.4em;
+  text-align: left;
+  text-indent: 0;
+  font-family: monospace;
+}
+span.code3 {
+  display: block;
+  margin: 0 0 0 2em;
+  line-height: 1.4em;
+  text-align: left;
+  text-indent: 0;
+  font-family: monospace;
+}
+span.code4 {
+  display: block;
+  margin: 0 0 0 3em;
+  line-height: 1.4em;
+  text-align: left;
+  text-indent: 0;
+  font-family: monospace;
+}
+span.code5 {
+  display: block;
+  margin: 0 0 0 4em;
+  line-height: 1.4em;
+  text-align: left;
+  text-indent: 0;
+  font-family: monospace;
+}
+span.code6 {
+  display: block;
+  margin: 0 0 0 5em;
+  line-height: 1.4em;
+  text-align: left;
+  text-indent: 0;
+  font-family: monospace;
+}
+span.code7 {
+  display: block;
+  margin: 0 0 0 6em;
+  line-height: 1.4em;
+  text-align: left;
+  text-indent: 0;
+  font-family: monospace;
+}
+
+
+
+/* ############################################# */
+/* #################### Other ################## */
+/* ############################################# */
+em, i, .italic {
+    font-style: italic;
+}
+strong, b, .bold {
+    font-weight: bold;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+    cursor: default
+}
+a[href] {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer
+}
+
+dt {
+  text-align: left;
+  font-weight: bold;
+  margin-top: 0.5em;
+}
+dd {
+  text-align: left;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+

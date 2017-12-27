@@ -13,6 +13,15 @@ p, li {
     orphans: 2;
 }
 
+a:focus, a:active, a:hover {
+  outline-width: 1px;
+  outline-style: dashed;
+  outline-color: red;
+}
+
+:target {
+  border: 2px solid black;
+}
 
 /* ############################################# */
 /* ################## Headings ################# */
@@ -302,4 +311,5 @@ dd {
   margin-left: 1.5em;
   margin-right: 1.5em;
 }
+
 
